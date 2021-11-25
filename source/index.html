@@ -10,7 +10,7 @@
   <header class="page-header">
     <a class="logo" href="#">
       <img class="logo__icon" src="img/logo-icon.svg" width="33" height="38" alt=" Графический логотип магазина Cat ENERGY.">
-      <img class="logo__shop-name" src="img/logo-shop-name.svg" height="101" width="18" alt="Текстовый логотип магазина Cat ENERGY.">
+      <img class="logo__shop-name" src="img/logo-shop-name.svg" height="18" width="101" alt="Текстовый логотип магазина Cat ENERGY.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -34,21 +34,22 @@
     <section class="hero">
       <h2 class="hero__title">Функциональное питание дя котов</h2>
       <p class="hero__slogan-text">Занялся собой? Займись котом!</p>
-      <a class="btn" href="#">Подобрать программу</a>
+      <img class="hero__product-image" src="img/site/hero-product.png" width="280" height="270" alt="Cat energy pro со вкусом курицы.">
+      <a class="hero__action-button button" href="#">Подобрать программу</a>
     </section>
     <section class="promo">
       <h2 class="visually-hidden">Перейдите в каталог с продукцией</h2>
-      <div class="promo__card">
-        <h3 class="promo__title promo__title--cat-icon">Похудение</h3>
-        <p class="promo__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
+      <div class="promo__item card-block">
+        <h3 class="card-block__title promo__title--slim-icon">Похудение</h3>
+        <p class="card-block__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
           диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a href="#" class="promo__link">Каталог Slim</a>
+        <a class="card-block__link" href="#">Каталог Slim</a>
       </div>
-      <div class="promo__card">
-        <h3 class="promo__title promo__title--panther-icon">Набор массы</h3>
-        <p class="promo__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
+      <div class="promo__item card-block">
+        <h3 class="card-block__title card-block__title--pro-icon">Набор массы</h3>
+        <p class="card-block__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
           вашему коту нарастить необходимые мышцы!</p>
-        <a href="#" class="promo__link">Каталог Pro</a>
+        <a class="card-block__link" href="#">Каталог Pro</a>
       </div>
     </section>
     <section class="plan">
@@ -77,31 +78,30 @@
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
         часов в день. </p>
-      <dl class="example__stats">
-        <div class="examplte__item">
-          <dt>Снижение веса</dt>
-          <dd>5 кг</dd>
+      <dl class="example__stats-result stats-result">
+        <div class="stats-result__item">
+          <dt class="stats-result__description">Снижение веса</dt>
+          <dd class="stats-result__number">5 кг</dd>
         </div>
-        <div class="examplte__item">
-          <dt>Затрачено времени</dt>
-          <dd>60 дней</dd>
+        <div class="stats-result__item">
+          <dt class="stats-result__description">Затрачено времени</dt>
+          <dd class="stats-result__number">60 дней</dd>
         </div>
-        <div class="examplte__item">
-          <dt>Затраты на питание: 15 000 руб</dt>
-          <dd>5 кг</dd>
+        <div class="stats-result__item">
+          <dt  class="stats-result__description">Затраты на питание: 15 000 руб</dt>
+          <dd  class="stats-result__number">5 кг</dd>
         </div>
       </dl>
       <div class="example__comparison comparison">
         <div class="comparison__image-area">
-          <img class="comparison__image comparison__image--before" width="" height="" src="#"
+          <img class="comparison__image comparison__image--before" width="280" height="232" src="img/site/cat-before.png"
             alt="Таким толстым наш код был раньше">
-          <img class="comparison__image comparison__image--before" width="" height="" src="#"
+          <img class="comparison__image comparison__image--before" width="243" height="232" src="img/site/cat-after.png"
             alt="А вот какой худой наш кот сейчас">
         </div>
         <div class="comparison__switcher-area switcher">
           <button class="switcher__btn switcher__btn--before" type="button">Было</button>
           <button class="switcher__btn switcher__btn--after" type="button">Стало</button>
-
         </div>
       </div>
     </section>
@@ -116,7 +116,8 @@
         Конюшенная, д. 19/8<br>
         Санкт-Петербург
       </address>
-      <img src="" alt="Наш магазин на карте мира.">
+      <img src="img/site/map-shop-location.jpg" width="320" height="362" alt="Наш магазин на карте мира.">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.3208587163829!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1637871818454!5m2!1sru!2sby" width="243" height="232" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
     <div class="page-footer__links-area">
       <a class="class-footer__logo logo" href="#">
