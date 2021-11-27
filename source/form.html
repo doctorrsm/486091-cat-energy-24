@@ -12,13 +12,14 @@
     <h1 class=page-main__main-title>Подбор программы</h1>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <p class="form__caption">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <!-- Данные кота -->
       <fieldset class="form__group">
         <legend class="form__group-name visually-hidden">Заполните данные вашего кота.</legend>
         <label class="form__element">
           <span class="form__element-name">Имя:*</span>
           <input class="form__input input" type="text" name="pet-name" value="Барсик" required>
         </label>
-        <label class="from__element">
+        <label class="form__element">
           <span class="form__element-name">Вес (кг):*</span>
           <input class="form__input input input--number" type="number" name="pet-weight" value="7" required>
         </label>
@@ -27,22 +28,40 @@
           <input class="form__input input input--number" type="number" name="pet-age" value="7">
         </label>
       </fieldset>
+      <!-- Цель программы -->
       <fieldset class="form__group">
         <legend class="form__group-name visually-hidden">Выберите цель программы.</legend>
+        <label class="form__element">
+          <input class="form__input input input--radio" type="radio" name="program-goal" value="weight loss" required>
+          <span class="form__element-name">Похудение</span>
+        </label>
+        <label class="form__element">
+          <input class="form__input input input--radio" type="radio" name="program-goal" value="weight gain" required>
+          <span class="form__element-name">Набор массы</span>
+        </label>
+        <label class="form__element">
+          <input class="form__input input input--radio" type="radio" name="program-goal" value="need advice" required>
+          <span class="form__element-name">Не знаю (Нужен ваш совет)</span>
+        </label>
       </fieldset>
+      <!-- Данные Владельца -->
       <fieldset class="form__group">
-        <legend class="form__group-name visually-hidden">Контактные данные
-          (владельца кота)</legend>
+        <legend class="form__group-name visually-hidden">Контактные данные (владельца кота)</legend>
           <label class="form__element">
             <span class="form__element-name">E-mail:*</span>
-            <input class="form__input input input--mail" type="mail" name="customer-name" value="kuklachev@gmail.com" required>
+            <input class="form__input input input--mail" type="email" name="customer-name" value="kuklachev@gmail.com" required>
           </label>
           <label class="from__element">
             <span class="form__element-name">Телефон:*</span>
-            <input class="form__input input input--number" type="phone" name="customer-phone" value="8 (960) 900-60-90" required>
+            <input class="form__input input input--number" type="tel" name="customer-phone" value="8 (960) 900-60-90" required>
           </label>
-
       </fieldset>
+      <!-- Комментарий покупателя -->
+      <fieldset class="form__group">
+        <legend class="form__group-name visually-hidden">Комментарий</legend>
+          <textarea class="form__textarea textarea" name="castomer-commentary" placeholder="Расскажите обо всех повАдках кота"></textarea>
+      </fieldset>
+      <!-- Кнопка отправить -->
       <button class="form__button button" type="submit">Отправить заявку</button>
     </form>
 
