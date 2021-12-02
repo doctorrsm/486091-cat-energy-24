@@ -31,21 +31,21 @@
       <!-- Цель программы -->
       <fieldset class="form__group">
         <legend class="form__group-name visually-hidden">Выберите цель программы.</legend>
-        <label class="form__element  radio">
-          <input class="form__radio" type="radio" name="program-goal" value="weight loss" required checked>
-          <span class="radio__mark"></span>
-          <span class="form__element-name">Похудение</span>
-        </label>
-        <label class="form__element  radio">
-          <input class="form__radio" type="radio" name="program-goal" value="weight gain" required>
-          <span class="radio__mark"></span>
-          <span class="form__element-name">Набор массы</span>
-        </label>
-        <label class="form__element  radio">
-          <input class="form__radio" type="radio" name="program-goal" value="need advice" required>
-          <span class="radio__mark"></span>
-          <span class="form__element-name">Не знаю (Нужен ваш совет)</span>
-        </label>
+        <p class="form__element  radio">
+          <input class="form__radio visually-hidden" type="radio" id="program-goal-loss" name="program-goal" value="weight loss" required checked>
+
+          <label class="form__element-name" for="program-goal-loss">Похудение</label>
+        </p>
+        <p class="form__element  radio">
+          <input class="form__radio visually-hidden" type="radio" id="program-goal-gain" name="program-goal" value="weight gain" required>
+
+          <label class="form__element-name" for="program-goal-gain">Набор массы</label>
+        </p>
+        <p class="form__element  radio">
+          <input class="form__radio visually-hidden" type="radio" id="program-goal-undefenite" name="program-goal" value="need advice" required>
+
+          <label class="form__element-name" for="program-goal-undefenite">Не знаю (Нужен ваш совет)</label>
+        </p>
       </fieldset>
       <!-- Данные Владельца -->
       <fieldset class="form__group">
@@ -67,26 +67,22 @@
       <!-- Дополнительные опции -->
       <fieldset class="form__group">
         <legend class="form__group-name">Дополительно</legend>
-        <label class="form__element  checkbox">
-          <input class="form__checkbox" type="checkbox" name="sweetener" checked>
-          <span class="checkbox__mark"></span>
-          <span class="form__element-name">Cахарозаменитель</span>
-        </label>
-        <label class="form__element  checkbox">
-          <input class="form__checkbox" type="checkbox" name="drinking-water">
-          <span class="checkbox__mark"></span>
-          <span class="form__element-name">Питьевая вода</span>
-        </label>
-        <label class="form__element  checkbox">
-          <input class="form__checkbox" type="checkbox" name="milk">
-          <span class="checkbox__mark"></span>
-          <span class="form__element-name">Молоко</span>
-        </label>
-        <label class="form__element  checkbox">
-          <input class="form__checkbox" type="checkbox" name="vitamins">
-          <span class="checkbox__mark"></span>
-          <span class="form__element-name">Витамины</span>
-        </label>
+        <p class="form__element  checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
+          <label class="form__element-name" for="sweetener">Cахарозаменитель</label>
+        </p>
+        <p class="form__element  checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" id="drinking-water" name="drinking-water">
+          <label class="form__element-name" for="drinking-water">Питьевая вода</label>
+        </p>
+        <p class="form__element  checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
+          <label class="form__element-name" for="milk">Молоко</label>
+        </p>
+        <p class="form__element  checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+          <label class="form__element-name" for="vitamins">Витамины</label>
+        </p>
       </fieldset>
       <!-- Кнопка отправить -->
       <button class="form__button button" type="submit">Отправить заявку</button>
