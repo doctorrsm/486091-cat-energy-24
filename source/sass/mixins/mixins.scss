@@ -1,0 +1,16 @@
+@mixin vertical-absolute-centering {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin horizontal-absolute-centering {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
