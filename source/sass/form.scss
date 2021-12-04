@@ -1,0 +1,105 @@
+.page-main {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 27px;
+}
+.page-main__main-title {
+  margin-top: 0;
+  margin-bottom: 37px;
+  font-style: normal;
+  font-family: $font-family-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
+}
+.form {
+}
+.form__caption {
+  margin-top: 0;
+  margin-bottom: 39px;
+  font-style: normal;
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+.form__group {
+
+
+}
+
+.form__about-cat-input-wrapper {
+
+}
+.form__group-name {
+
+}
+.visually-hidden {
+}
+.form__element {
+  display: flex;
+}
+.form__element-name {
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.form__input {
+  flex-grow: 1;
+}
+.input {
+  border: none;
+  outline: 1px solid #e7e7e7;
+  outline-offset:-1px;
+  color: inherit;
+  padding: 14px 14px 15px;
+
+  &:hover {
+    outline-color: $grey-300;
+  }
+  &:focus {
+    outline-color: $grey-500;
+    outline-width: 2px;
+    outline-offset:-2px;
+  }
+  &:invalid {
+    outline-color: $error;
+    outline-width: 2px;
+    outline-offset:-2px;
+  }
+}
+.input-error {
+  outline-color: $error;
+    outline-width: 2px;
+    outline-offset:-2px;
+}
+.input--number {
+}
+.radio {
+  color: $grey-600;
+}
+.form__radio {
+}
+.form__element-email {
+}
+.input--mail {
+}
+.form__textarea {
+}
+.textarea {
+}
+.checkbox {
+}
+.form__checkbox {
+}
+.form__button {
+}
+.button {
+}
+.form__footnote {
+}
