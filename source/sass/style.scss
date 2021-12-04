@@ -3,6 +3,7 @@
 @import "mixins/mixins.scss";
 @import "blocks/container.scss";
 @import "form.scss";
+@import "catalog.scss";
 
 .page-header {
 
@@ -109,7 +110,7 @@
   width: 100%;
 }
 .button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 11px;
@@ -124,6 +125,8 @@
   text-transform: uppercase;
   text-align: center;
   background-color: $basic;
+  border: none;
+  cursor: pointer;
 }
 .button:hover {
   background-color: $basic-dark;
