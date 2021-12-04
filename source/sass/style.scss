@@ -167,7 +167,7 @@
 
 .promo__item__text:last-of-type {
   margin-bottom: 15px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
 }
 .promo__item__link {
@@ -235,11 +235,13 @@
 }
 .example {
   padding: 25px 0 40px;
+  height:700px;
+  overflow: hidden;
   background-color: #eaeaea;
 }
 .example__title {
   margin-top: 0;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
   font-family: $font-family-secondary;
   font-style: normal;
   font-weight: 400;
@@ -274,6 +276,7 @@
   display: flex;
   flex-direction: column-reverse;
   padding: 14px;
+  padding-bottom: 8px;
   position: relative;
   margin-bottom: 14px;
 }
@@ -361,10 +364,13 @@ color: #000000;
 
 }
 .contacts {
-  padding: 26px 0;
+
+  height: 474px;
+  overflow: hidden;
 
 }
 .contacts_address-wrapper {
+  padding: 26px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -376,7 +382,7 @@ font-size: 16px;
 line-height: 20px;
 text-align: left;
 text-transform: uppercase;
-margin-top: 0;
+margin: 0;
 
 color: #111111;
 }
@@ -388,7 +394,7 @@ color: #111111;
   background-color: $grey-100;
 }
 .page-footer__logo {
-  padding: 39px 0 32px;
+  padding: 39px 0 31px;
   display: block;
   display: flex;
   align-items: center;
@@ -415,7 +421,9 @@ color: #111111;
 }
 .socials__link {
   display: inline-flex;
-  padding: 18px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 18px;
 }
 .social-icon {
 }
