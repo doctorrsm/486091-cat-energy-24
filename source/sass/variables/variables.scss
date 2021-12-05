@@ -1,0 +1,35 @@
+// Colors
+
+$basic: #68b738;
+$basic-dark: #5eaa2f;
+$error: #ff8282;
+$grey-100: #f2f2f2;
+$grey-200: #ebebeb;
+$grey-300: #cdcdcd;
+$grey-400: #666666;
+$grey-500: #444444;
+$grey-600: #222222;
+
+$secondary-background: #e5e5e5;
+
+// Typography
+
+$font-family-primary: "Arial", sans-serif;
+$font-family-secondary: "Oswald", "Tahoma", sans-serif;
+
+
+$font-size-base: 14px;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1: floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3: ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5: $font-size-base !default;
+$font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+$font-weight-base: 400;
+
+$line-height-base: 18px;

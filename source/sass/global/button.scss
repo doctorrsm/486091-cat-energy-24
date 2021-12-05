@@ -1,0 +1,40 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: $basic;
+  border: none;
+  text-align: center;
+  min-height: 40px;
+
+  &:hover {
+    background-color: $basic-dark;
+  }
+  &:active {
+    color: #8ec36d;
+  }
+
+}
+
+.button--light {
+  background-color: $grey-100;
+  color: $grey-500;
+  &:hover {
+    background-color: $grey-200;
+  }
+  &:active {
+    color: #b9b9b9;
+  }
+}
