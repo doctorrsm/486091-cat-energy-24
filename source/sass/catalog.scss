@@ -94,7 +94,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-
   color: $grey-500;
 }
 .show-more__button {
@@ -105,30 +104,103 @@
 }
 
 .additional-products {
+  padding: 25px 0 35px;
 }
 .additional-products__title {
+  font-family: $font-family-secondary;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 .additional-products__list {
+  @include list-reset;
 }
 .additional-products__item {
 }
 .flat-card {
+  border-top: 1px solid $grey-300;
+  padding-top: 13px;
+  padding-bottom: 19px;
 }
-.flat-catalog-card__description-title {
+.flat-card:last-of-type {
+  border-bottom: 1px solid $grey-300;
+}
+.flat-card__description-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+
+  color: $grey-600;
 }
 .flat-card__description-list {
+  margin: 0;
+  margin-bottom: 15px;
 }
 .flat-card__description-item {
+  display: flex;
+  justify-content: space-between;
 }
 .flat-card__description-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  color: $grey-500;
 }
 .flat-card__description-value {
+  margin-left: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  color: $grey-500;
 }
 .flat-card__button {
 }
 .special-offer {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 290px;
+  padding-bottom: 43px;
+  color: #ffffff;
+  background-color: $basic;
+  background-image: url("../img/backgrounds/gift-backgroud.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+}
+.special-offer:before{
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(104, 183, 56, 0.85);
 }
 .special-offer__icon {
 }
 .special-offer__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 161px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }

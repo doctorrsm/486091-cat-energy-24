@@ -6,10 +6,6 @@
   <title>Подбор программы</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -68,15 +64,15 @@
           <!-- Цель программы -->
           <fieldset class="form__group form__group-radio-wrapper">
             <legend class="form__group-name visually-hidden">Выберите цель программы.</legend>
-            <p class="form__element  radio">
+            <p class="form__element radio"> <!-- Убраь блок радио и сделать его элементом-->
               <input class="form__radio visually-hidden" type="radio" id="program-goal-loss" name="program-goal" value="weight loss" required checked>
               <label class="form__element-name" for="program-goal-loss">Похудение</label>
             </p>
-            <p class="form__element  radio">
+            <p class="form__element radio">
               <input class="form__radio visually-hidden" type="radio" id="program-goal-gain" name="program-goal" value="weight gain" required>
               <label class="form__element-name" for="program-goal-gain">Набор массы</label>
             </p>
-            <p class="form__element  radio">
+            <p class="form__element radio">
               <input class="form__radio visually-hidden" type="radio" id="program-goal-undefenite" name="program-goal" value="need advice" required>
               <label class="form__element-name" for="program-goal-undefenite">Не знаю (Нужен ваш совет)</label>
             </p>
