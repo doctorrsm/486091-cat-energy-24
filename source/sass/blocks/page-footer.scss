@@ -1,0 +1,19 @@
+.page-footer_grid {
+  @media (min-width: $screen-tablet) {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.page-footer__links {
+  background-color: $grey-100;
+}
+.page-footer__logo {
+  padding: 39px 0 31px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

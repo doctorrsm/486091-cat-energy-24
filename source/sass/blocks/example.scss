@@ -1,0 +1,36 @@
+.example {
+  padding: 25px 0 40px;
+  height:700px;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+.example__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+.example__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.example__stats-result {
+}
+.example__stats-wrapper {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.example__stats-result-boxed {
+  margin: 0;
+}
+
+.example__stats-result-plain {
+  margin: 0;
+}
+.example__comparison {
+}
