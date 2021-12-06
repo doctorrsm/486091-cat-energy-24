@@ -9,7 +9,7 @@
 </head>
 
 <body class="page-body">
-    <div class="overlay"></div>
+  <div class="overlay"></div>
   <header class="page-header">
     <div class="container">
 
@@ -51,15 +51,16 @@
               alt="Cat energy pro со вкусом курицы.">
           </p>
           <a class="hero__action-button button" href="form.html">Подобрать программу</a>
-                </div>
         </div>
+      </div>
     </section>
     <section class="promo">
       <h2 class="visually-hidden">Перейдите в каталог с продукцией.</h2>
       <div class="promo__list container">
         <div class="promo__item">
           <h3 class="promo__item__title promo__item__title--slim-icon">Похудение</h3>
-          <p class="promo__item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
+          <p class="promo__item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+            на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="promo__item__link" href="slim.html">Каталог Slim</a>
         </div>
@@ -205,5 +206,15 @@
       </div>
     </div>
   </footer>
+  <script>
+    let mainNav = document.querySelector('.main-nav');
+    let toogleButton = document.querySelector('.navbar__toggle');
+    toogleButton.onclick = function () {
+      mainNav.classList.toggle('main-nav--visible');
+      toogleButton.classList.toggle('navbar__toggle--active');
+
+    };
+
+  </script>
 
 </html>
