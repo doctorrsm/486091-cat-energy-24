@@ -1,0 +1,25 @@
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 0 24px;
+  @media (min-width: $screen-tablet ) {
+    justify-content: space-between;
+  }
+
+}
+.navbar__toggle {
+  position: absolute;
+  right: 0;
+  height: 18px;
+  width: 24px;
+  cursor: pointer;
+  background-image: url("../img/icons/burger.svg");
+  background-color: inherit;
+  border: none;
+
+  @media (min-width: $screen-tablet ) {
+    display: none;
+  }
+}

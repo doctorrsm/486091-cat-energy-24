@@ -5,113 +5,22 @@
 @import "mixins/mixins.scss";
 
 @import "blocks/container.scss";
+@import "blocks/page-header";
+@import "blocks/navbar";
+@import "blocks/logo";
+@import "blocks/main-nav";
+@import "blocks/hero";
 @import "form.scss";
 @import "catalog.scss";
 
-.page-header {
-
-}
-
-.page-header__logo {
-  display: block;
-  padding: 14px 0 15px;
-  line-height: 18px;
-}
-
-.page-header__navbar {
-}
-.navbar {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 23px 0 24px;
-}
-.navbar__toggle {
-  position: absolute;
-  right: 0;
-  height: 18px;
-  width: 24px;
-  cursor: pointer;
-  background-image: url("../img/icons/burger.svg");
-  background-color: inherit;
-  border: none;
-}
-.logo {
-}
-.logo__icon {
-  @include vertical-absolute-centering;
-  left: 0;
-}
-.logo__shop-name {
-  display: block;
-}
-.main-nav {
-  display: none;
-}
 
 
-.main-nav__list {
-  @include vertical-absolute-centering;
-}
-.main-nav__item {
-}
-.main-nav__link {
-}
+
+
+
 .page-main {
 }
-.hero {
-  padding-top: 27px;
-  color: #ffffff;
-  background-color: $basic;
-  /*
-  background-image: url(../img/backgrounds/index-background-overlay.jpg);
-  background-color: $basic;
-  background-size: contain;
-  background-repeat: no-repeat;
-  */
-  text-align: center;
-}
-/*.hero:before {
-  content: '';
-  position: absolute;
-  width: 100vw;
-  height: 302px;
-  left: 0;
-  background-color: $basic;
-  background-image: url(../img/backgrounds/index-background-overlay.jpg);
 
-  background-size: contain;
-  background-repeat: no-repeat;
-}*/
-.hero__title {
-  margin-top: 0;
-  margin-bottom: 25px;
-  font-family: $font-family-secondary;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-}
-.hero__slogan {
-  margin-top: 0px;
-  margin-bottom: 29px;
-  font-style: normal;
-  font-family: $font-family-secondary;
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
-.hero_product-image-wrapper{
-  margin: 0;
-  margin-bottom: 3px;
-}
-.hero__product-image {
-  display: block;
-  margin: 0 auto;
-}
-.hero__action-button {
-  width: 100%;
-}
 
 .promo {
   padding: 20px 0 20px;
