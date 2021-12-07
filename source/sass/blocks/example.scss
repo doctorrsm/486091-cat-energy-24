@@ -3,6 +3,12 @@
   height:700px;
   overflow: hidden;
   background-color: #eaeaea;
+  @media (min-width: $screen-tablet) {
+    padding: 43px 0 55px;
+  }
+  @media (min-width: $screen-desktop) {
+    padding: 43px 0 65px;
+  }
 }
 .example__title {
   margin-top: 0;

@@ -1,5 +1,11 @@
 .features {
   padding-bottom: 49px;
+  @media (min-width: $screen-tablet) {
+    padding-bottom: 47px;
+  }
+  @media (min-width: $screen-desktop) {
+    padding-bottom: 26px;
+  }
 }
 .features__title {
   margin-top: 0;
@@ -10,17 +16,21 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 32px;
+  }
 }
 .features__list {
   @include list-reset;
   display: grid;
   row-gap: 20px;
-  @media (min-width: $screen-tablet) and (max-width: $screen-desktop) {
+  @media (min-width: $screen-tablet) {
     grid-template-columns: 1fr 1fr;
     gap: 37px 153px;
   }
   @media (min-width: $screen-desktop) {
     grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 37px 94px;
   }
 }
 .features__item {

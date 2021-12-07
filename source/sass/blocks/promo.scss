@@ -1,5 +1,11 @@
 .promo {
   padding: 20px 0 20px;
+  @media (min-width: $screen-tablet) {
+    padding: 0 0 45px;
+  }
+  @media (min-width: $screen-desktop) {
+    padding: 82px 0 71px;
+  }
 }
 
 .promo__list {

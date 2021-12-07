@@ -11,6 +11,10 @@
   text-align: center;
   @media (min-width: $screen-tablet){
     text-align: left;
+    padding-top: 40px;
+  }
+  @media (min-width: $screen-desktop) {
+    padding-top: 58px;
   }
 }
 /*.hero:before {
