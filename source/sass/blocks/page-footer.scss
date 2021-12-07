@@ -8,6 +8,12 @@
 }
 .page-footer__links {
   background-color: $grey-100;
+  @media (min-width: $screen-tablet) {
+      padding: 27px 0;
+  }
+  @media (min-width: $screen-desktop) {
+    padding: 28px 0;
+}
 }
 .page-footer__logo {
   padding: 39px 0 31px;

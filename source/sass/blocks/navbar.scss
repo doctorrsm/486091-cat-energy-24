@@ -6,6 +6,11 @@
   padding: 23px 0 24px;
   @media (min-width: $screen-tablet ) {
     justify-content: space-between;
+    padding: 17px 0 17px;
+  }
+  @media (min-width: $screen-desktop ) {
+    justify-content: space-between;
+    padding: 49px 0 50px;
   }
 
 }

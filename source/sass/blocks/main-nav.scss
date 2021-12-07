@@ -1,8 +1,11 @@
 .main-nav {
   display: none;
   background-color: #ffffff;
-  width: calc(100% + 40px);
   text-align: center;
+
+  @media (max-width: $screen-mobile) {
+    width: calc(100% + 40px);
+  }
 
 
   @media (min-width: $screen-tablet) {
@@ -38,5 +41,8 @@
   color: #000000;
   padding: 22px 22px 24px;
   display: block;
-  border-bottom: 1px solid #e6e6e6;
+  @media (max-width: $screen-mobile) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
 }
