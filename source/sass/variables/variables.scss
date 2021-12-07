@@ -33,3 +33,7 @@ $font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
 $font-weight-base: 400;
 
 $line-height-base: 18px;
+
+$screen-mobile: 767px;
+$screen-tablet: 768px;
+$screen-desktop: 1440px;

@@ -9,7 +9,7 @@
 </head>
 
 <body class="page-body">
-    <div class="overlay"></div>
+  <div class="overlay"></div>
   <header class="page-header">
     <div class="container">
 
@@ -42,20 +42,25 @@
   <main class="page-main">
     <h1 class="visually-hidden">Интернет-магазин питания для котов "Cat ENERGY"</h1>
     <section class="hero">
-      <h2 class="hero__title">Функциональное питание дя котов</h2>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <p class="hero_product-image-wrapper">
-        <img class="hero__product-image" src="img/site/hero-product.png" width="280" height="270"
-          alt="Cat energy pro со вкусом курицы.">
-      </p>
-      <a class="hero__action-button button" href="form.html">Подобрать программу</a>
+      <div class="container">
+        <div class="hero__content-wrapper">
+          <h2 class="hero__title">Функциональное питание дя котов</h2>
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
+          <p class="hero_product-image-wrapper">
+            <img class="hero__product-image" src="img/site/hero-product.png" width="280" height="270"
+              alt="Cat energy pro со вкусом курицы.">
+          </p>
+          <a class="hero__action-button button" href="form.html">Подобрать программу</a>
+        </div>
+      </div>
     </section>
     <section class="promo">
       <h2 class="visually-hidden">Перейдите в каталог с продукцией.</h2>
       <div class="promo__list container">
         <div class="promo__item">
           <h3 class="promo__item__title promo__item__title--slim-icon">Похудение</h3>
-          <p class="promo__item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
+          <p class="promo__item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+            на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="promo__item__link" href="slim.html">Каталог Slim</a>
         </div>
@@ -132,8 +137,9 @@
   <footer class="page-footer">
     <section class="contacts">
       <h2 class="visually-hidden">Наш адрес</h2>
-      <div class="container">
-        <div class="contacts_address-wrapper ">
+
+      <div class="contacts__address-wrapper ">
+        <div class="container">
           <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__shop-address">
             ул. Большая<br>
@@ -142,13 +148,17 @@
           </address>
         </div>
       </div>
-      <img src="img/site/map-shop-location.jpg" width="320" height="362" alt="Наш магазин на карте мира.">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.3208587163829!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1637871818454!5m2!1sru!2sby"
-        width="243" height="232" allowfullscreen="" loading="lazy"></iframe>
+      <div class="contacts__map-wrapper ">
+        <div class="container">
+          <img src="img/site/map-shop-location.jpg" width="320" height="362" alt="Наш магазин на карте мира.">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.3208587163829!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1637871818454!5m2!1sru!2sby"
+            width="243" height="232" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
     </section>
     <div class="page-footer__links">
-      <div class="container">
+      <div class="container page-footer_grid">
         <a class="page-footer__logo logo">
           <img class="logo__shop-name logo__shop-name--large" src="img/logo-shop-name.svg" width="128" height="24"
             alt="Текстовый логотип магазина Cat ENERGY.">
@@ -201,5 +211,15 @@
       </div>
     </div>
   </footer>
+  <script>
+    let mainNav = document.querySelector('.main-nav');
+    let toogleButton = document.querySelector('.navbar__toggle');
+    toogleButton.onclick = function () {
+      mainNav.classList.toggle('main-nav--visible');
+      toogleButton.classList.toggle('navbar__toggle--active');
+
+    };
+
+  </script>
 
 </html>
