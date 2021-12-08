@@ -1,0 +1,64 @@
+.contacts {
+  height: 474px;
+  overflow: hidden;
+}
+
+.contacts__map-wrapper {
+  background-image: url("../img/site/map-shop-location.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts__map {
+  margin: 0 -20px;
+  width: calc(100% + 40px);
+  border: none;
+  display: block;
+}
+
+.contacts__address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $screen-desktop) {
+    column-gap: 80px;
+  }
+
+}
+
+.contacts__address-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 0;
+  background-color: $grey-100;
+
+  @media (min-width: $screen-tablet) {
+  padding: 56px 40px;
+  }
+  @media (min-width: $screen-desktop) {
+  background-color: #ffffff;
+  }
+}
+
+.contacts__text {
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  color: #111111;
+}
+
+.contacts__shop-address {
+  line-height: 20px;
+  font-style: normal;
+
+  @media (min-width: $screen-tablet) and (max-width: ($screen-desktop - 1px)) {
+    text-align: right;
+  }
+
+}
