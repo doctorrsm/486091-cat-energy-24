@@ -1,0 +1,22 @@
+.page-main {
+
+  @media (max-width: $screen-mobile) {
+    border-top: 1px solid #d9d9d9;
+  }
+}
+.page-main__hero {
+  position: relative;
+  @media (min-width: $screen-tablet) {
+  margin-left: 87px;
+  }
+}
+.page-main__main-title {
+  margin-top: 0;
+  margin-bottom: 37px;
+  font-style: normal;
+  font-family: $font-family-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
+}

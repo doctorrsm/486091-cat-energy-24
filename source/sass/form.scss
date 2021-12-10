@@ -1,22 +1,4 @@
-.page-main {
 
-  padding-top: 27px;
-
-  @media (max-width: $screen-mobile) {
-    border-top: 1px solid #d9d9d9;
-  }
-}
-
-.page-main__main-title {
-  margin-top: 0;
-  margin-bottom: 37px;
-  font-style: normal;
-  font-family: $font-family-secondary;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: #000000;
-}
 
 
 .input-group {
@@ -102,12 +84,6 @@
     outline-color: $error;
     outline-width: 2px;
     outline-offset: -2px;
-  }
-  @media (min-width: $screen-tablet) {
-    width: calc(100% - 80px);
-  }
-  @media (min-width: $screen-desktop) {
-  width: 100%;
   }
 }
 

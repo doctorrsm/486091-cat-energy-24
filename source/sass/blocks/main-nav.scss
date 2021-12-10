@@ -10,6 +10,7 @@
 
   @media (min-width: $screen-tablet) {
     display: flex;
+    background-color: inherit;
   }
 }
 
@@ -41,8 +42,30 @@
   color: #000000;
   padding: 22px 22px 24px;
   display: block;
+
   @media (max-width: $screen-mobile) {
     border-bottom: 1px solid #e6e6e6;
+
   }
 
+  @media (min-width: $screen-tablet) {
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 0 8px;
+    margin-left: 36px;
+  }
+
+}
+
+.main-nav__item:first-child .main-nav__link {
+  @media (min-width: $screen-tablet) {
+    margin-left: initial;
+  }
+}
+
+.main-nav__link--current {
+  @media (min-width: $screen-tablet) {
+    border-bottom: 2px solid $basic;
+  }
 }

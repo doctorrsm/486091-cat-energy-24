@@ -10,7 +10,7 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-body__page-header page-header">
     <div class="container">
 
       <nav class="page-header__navbar navbar">
@@ -64,16 +64,20 @@
           <!-- Цель программы -->
           <fieldset class="form__group form__group-radio-wrapper">
             <legend class="form__group-name visually-hidden">Выберите цель программы.</legend>
-            <p class="form__element radio"> <!-- Убраь блок радио и сделать его элементом-->
-              <input class="form__radio visually-hidden" type="radio" id="program-goal-loss" name="program-goal" value="weight loss" required checked>
+            <p class="form__element radio">
+              <!-- Убраь блок радио и сделать его элементом-->
+              <input class="form__radio visually-hidden" type="radio" id="program-goal-loss" name="program-goal"
+                value="weight loss" required checked>
               <label class="form__element-name" for="program-goal-loss">Похудение</label>
             </p>
             <p class="form__element radio">
-              <input class="form__radio visually-hidden" type="radio" id="program-goal-gain" name="program-goal" value="weight gain" required>
+              <input class="form__radio visually-hidden" type="radio" id="program-goal-gain" name="program-goal"
+                value="weight gain" required>
               <label class="form__element-name" for="program-goal-gain">Набор массы</label>
             </p>
             <p class="form__element radio">
-              <input class="form__radio visually-hidden" type="radio" id="program-goal-undefenite" name="program-goal" value="need advice" required>
+              <input class="form__radio visually-hidden" type="radio" id="program-goal-undefenite" name="program-goal"
+                value="need advice" required>
               <label class="form__element-name" for="program-goal-undefenite">Не знаю (Нужен ваш совет)</label>
             </p>
           </fieldset>
@@ -82,21 +86,26 @@
         <!-- Данные Владельца -->
         <fieldset class="form__group">
           <legend class="form__group-name">Контактные данные (владельца кота)</legend>
-            <div class="input-group input-group--contacts">
-              <label class="form__element">
-                <span class="form__element-name">E-mail:*</span>
-                <input class="form__input input input--mail" type="email" name="customer-name" value="kuklachev@gmail.com" required>
-              </label>
-              <label class="form__element">
-                <span class="form__element-name">Телефон:*</span>
-                <input class="form__input input input--number" type="tel" name="customer-phone" value="8 (960) 900-60-90" required>
-              </label>
-            </div>
+          <div class="input-group input-group--contacts">
+            <label class="form__element">
+              <span class="form__element-name">E-mail:*</span>
+              <input class="form__input input input--mail" type="email" name="customer-name" value="kuklachev@gmail.com"
+                required>
+            </label>
+            <label class="form__element">
+              <span class="form__element-name">Телефон:*</span>
+              <input class="form__input input input--number" type="tel" name="customer-phone" value="8 (960) 900-60-90"
+                required>
+            </label>
+          </div>
         </fieldset>
         <!-- Комментарий покупателя -->
         <fieldset class="form__group">
           <legend class="form__group-name">Комментарий</legend>
-            <textarea class="form__textarea textarea" name="customer-commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form__textarea-wrapper">
+            <textarea class="form__textarea textarea" name="customer-commentary"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <!-- Дополнительные опции -->
         <fieldset class="form__group">
