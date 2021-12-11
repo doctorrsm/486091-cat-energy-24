@@ -12,8 +12,10 @@
 
   display: grid;
   row-gap: 20px;
+  @media (min-width: $screen-tablet) {
+  row-gap: 30px;
+  }
   @media (min-width: $screen-desktop) {
-
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
@@ -24,12 +26,12 @@
   background-color: $grey-100;
   @media (min-width: $screen-tablet) {
     padding: 77px 53px 53px;
+    padding-right: 334px;
   }
 }
 
 
-
-.promo__item__title {
+.promo__item-title {
   margin-top: 0;
   margin-bottom: 29px;
   padding-left: 71px;
@@ -41,32 +43,45 @@
   color: #000000;
   text-transform: uppercase;
   @media (min-width: $screen-tablet) {
-  padding-left: 0;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0em;
-  text-align: left;
+    padding-left: 0;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 24px;
 
   }
 }
 
-.promo__item__title--slim-icon {}
-
-.promo__item__title--pro-icon {}
-
-.promo__item__text {
-  margin-top: 0;
+.promo__item-title--slim-icon {
 }
 
-.promo__item__text:last-of-type {
+.promo__item-title--pro-icon {
+}
+
+.promo__item-text {
+  margin-top: 0;
+  @media (min-width: $screen-tablet) {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    color: #000000;
+  }
+}
+
+.promo__item-text:last-of-type {
   margin-bottom: 15px;
   padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
+  @media (min-width: $screen-tablet) {
+    border: none;
+    margin-bottom: 25px;
+  }
 }
 
-.promo__item__link {
+.promo__item-link {
   display: inline-block;
   padding: 4px 47px 4px 0;
   font-style: normal;
@@ -77,4 +92,9 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
 }

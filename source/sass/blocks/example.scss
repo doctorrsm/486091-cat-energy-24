@@ -19,10 +19,20 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 66px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 .example__text {
   margin-top: 0;
   margin-bottom: 20px;
+  @media (min-width: $screen-tablet) {
+    padding-right: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .example__stats-result {
 }
