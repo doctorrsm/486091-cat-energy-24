@@ -1,5 +1,5 @@
 .features {
-  padding-bottom: 49px;
+  padding-bottom: 36px;
   @media (min-width: $screen-tablet) {
     padding-bottom: 47px;
   }
@@ -35,7 +35,8 @@
   }
   @media (min-width: $screen-desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 37px 94px;
+    gap: 37px 78px;
+    padding-right: 0;
   }
 }
 

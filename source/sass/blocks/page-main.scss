@@ -4,12 +4,15 @@
     border-top: 1px solid #d9d9d9;
   }
 }
+
 .page-main__hero {
   position: relative;
+
   @media (min-width: $screen-tablet) {
-  margin-left: 87px;
+    margin-left: 87px;
   }
 }
+
 .page-main__main-title {
   margin-top: 0;
   margin-bottom: 37px;
@@ -19,4 +22,10 @@
   line-height: 36px;
   font-weight: 400;
   color: #000000;
+}
+
+.page-main--under-header-position {
+  @media (min-width: $screen-desktop) {
+ margin-top: -165px;
+  }
 }

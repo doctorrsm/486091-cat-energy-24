@@ -1,8 +1,10 @@
 .promo {
   padding: 20px 0 20px;
+
   @media (min-width: $screen-tablet) {
     padding: 0 0 45px;
   }
+
   @media (min-width: $screen-desktop) {
     padding: 82px 0 71px;
   }
@@ -12,9 +14,11 @@
 
   display: grid;
   row-gap: 20px;
+
   @media (min-width: $screen-tablet) {
-  row-gap: 30px;
+    row-gap: 30px;
   }
+
   @media (min-width: $screen-desktop) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -24,9 +28,15 @@
 .promo__item {
   padding: 30px 33px 18px 20px;
   background-color: $grey-100;
+
   @media (min-width: $screen-tablet) {
     padding: 77px 53px 53px;
     padding-right: 334px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 53px;
+    padding-bottom: 53px;
   }
 }
 
@@ -42,6 +52,7 @@
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+
   @media (min-width: $screen-tablet) {
     padding-left: 0;
     font-size: 36px;
@@ -53,16 +64,20 @@
     margin-bottom: 24px;
 
   }
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 160px;
+    margin-bottom: 74px;
+  }
 }
 
-.promo__item-title--slim-icon {
-}
+.promo__item-title--slim-icon {}
 
-.promo__item-title--pro-icon {
-}
+.promo__item-title--pro-icon {}
 
 .promo__item-text {
   margin-top: 0;
+
   @media (min-width: $screen-tablet) {
     font-size: 16px;
     font-style: normal;
@@ -75,9 +90,14 @@
   margin-bottom: 15px;
   padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
+
   @media (min-width: $screen-tablet) {
     border: none;
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 0;
   }
 }
 
@@ -92,6 +112,7 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+
   @media (min-width: $screen-tablet) {
     font-size: 20px;
     font-weight: 400;

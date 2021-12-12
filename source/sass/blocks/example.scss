@@ -5,6 +5,9 @@
   background-color: #eaeaea;
   @media (min-width: $screen-tablet) {
     padding: 43px 0 55px;
+    background: linear-gradient(to top, #eaeaea 0%, #eaeaea 43%, #ffffff 43%, #ffffff 100%);
+    height: auto;
+
   }
   @media (min-width: $screen-desktop) {
     padding: 43px 0 65px;
@@ -40,6 +43,12 @@
   margin-top: 20px;
   margin-bottom: 40px;
   text-align: center;
+  @media (min-width: $screen-tablet) {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 53px;
+
+  }
 }
 .example__stats-result-boxed {
   margin: 0;

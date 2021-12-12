@@ -1,0 +1,108 @@
+.stats-result {}
+
+.stats-result-boxed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+
+  @media (min-width: $screen-tablet) {
+    padding-right: 52px;
+    column-gap: 42px;
+  }
+}
+
+.stats-result-boxed__item {
+  border: 1px solid $grey-300;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 14px;
+  padding-bottom: 8px;
+  position: relative;
+  margin-bottom: 14px;
+
+  @media (min-width: $screen-tablet) {
+    padding: 14px 0 8px;
+  }
+}
+
+.stats-result-boxed__description {
+  @include horizontal-absolute-centering;
+  position: absolute;
+  bottom: -15px;
+  max-width: 100px;
+  padding: 0 15px;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  background-color: #eaeaea;
+
+  @media (min-width: $screen-tablet) {
+    background-color: #ffffff;
+  }
+}
+
+.stats-result-boxed__value {
+  margin: 0;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-family: $font-family-secondary;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.stats-result-plain {
+  padding-top: 20px;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 11px;
+  }
+}
+
+.stats-result-plain__item {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.stats-result-plain__description,
+.stats-result-plain__value {
+  display: inline;
+  font-style: normal;
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+  }
+}
+
+.stats-result-plain__value {
+  margin-left: 3px;
+
+  @media (min-width: $screen-tablet) {
+    padding-right: 5px;
+  }
+}
+
+.stats-result-plain__description {
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 8px;
+
+  }
+}
