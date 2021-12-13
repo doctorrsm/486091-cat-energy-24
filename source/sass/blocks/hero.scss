@@ -118,7 +118,7 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-bottom: 63px;
+    margin-bottom: 48px;
   }
   @media (min-width: $screen-desktop) {
  margin-bottom: 50px;
@@ -144,5 +144,6 @@
 
   @media (min-width: $screen-tablet) {
     width: auto;
+      margin-left: 4px;
   }
 }

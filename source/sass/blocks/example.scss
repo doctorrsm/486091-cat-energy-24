@@ -1,61 +1,96 @@
 .example {
-  padding: 25px 0 40px;
-  height:700px;
-  overflow: hidden;
-  background-color: #eaeaea;
-  @media (min-width: $screen-tablet) {
-    padding: 43px 0 55px;
-    background: linear-gradient(to top, #eaeaea 0%, #eaeaea 43%, #ffffff 43%, #ffffff 100%);
-    height: auto;
+    padding: 25px 0 40px;
+    height: 700px;
+    overflow: hidden;
+    background-color: #eaeaea;
 
-  }
-  @media (min-width: $screen-desktop) {
-    padding: 43px 0 65px;
-  }
+    @media (min-width: $screen-tablet) {
+        padding: 43px 0 55px;
+        background: linear-gradient(to top, #eaeaea 0%, #eaeaea 43%, #ffffff 43%, #ffffff 100%);
+        height: auto;
+
+    }
+
+    @media (min-width: $screen-desktop) {
+        padding: 43px 0 65px;
+    }
 }
+
+.example__grid {
+    @media (min-width: $screen-desktop) {
+        display: grid;
+        column-gap: 80px;
+        grid-template-areas: 
+            "header header"
+            "text comparison"
+            "stats comparison";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .example__title {
-  margin-top: 0;
-  margin-bottom: 40px;
-  font-family: $font-family-secondary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
-  @media (min-width: $screen-tablet) {
-    margin-bottom: 66px;
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-.example__text {
-  margin-top: 0;
-  margin-bottom: 20px;
-  @media (min-width: $screen-tablet) {
-    padding-right: 10px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-.example__stats-result {
-}
-.example__stats-wrapper {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  text-align: center;
-  @media (min-width: $screen-tablet) {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 53px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
 
-  }
+    @media (min-width: $screen-tablet) {
+        margin-bottom: 65px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+    @media (min-width: $screen-desktop) { 
+        grid-area: header;
+        margin-bottom: 148px;
+    }
 }
+
+.example__text {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-tablet) {
+        padding-right: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @media (min-width: $screen-desktop) { 
+        grid-area: text;
+        padding-right: 139px;
+    }
+}
+
+.example__stats-result {}
+
+.example__stats-wrapper {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (min-width: $screen-tablet) {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 53px;
+    }
+    @media (min-width: $screen-desktop) { 
+        grid-area: stats;
+    }
+}
+
 .example__stats-result-boxed {
-  margin: 0;
+    margin: 0;
 }
 
 .example__stats-result-plain {
-  margin: 0;
+    margin: 0;
 }
+
 .example__comparison {
+    @media (min-width: $screen-desktop) { 
+        grid-area: comparison;
+    }
 }

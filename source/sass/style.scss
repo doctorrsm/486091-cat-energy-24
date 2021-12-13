@@ -32,15 +32,40 @@
   }
 }
 
-.comparison__image-wrapper {}
+.comparison__image-wrapper {
+    margin-bottom: 20px;
+}
 
-.comparison__image {}
+.comparison__image {    
+    @media (max-width: $screen-mobile) {
+        display: none;
+    }
+}
+.comparison__image--phone-visible{
+    @media (max-width: $screen-mobile) {
+       display:block; 
+    }
+    
+}
+.comparison__image--before {
+    position: absolute;
+}
+.comparison__image--after {
+    @media (min-width: $screen-tablet) { 
+        display: block;
+    }
+}
 
-.comparison__image--before {}
+
 
 .comparison__switcher-area {}
 
-.switcher {}
+.switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 34px;
+}
 
 .switcher__control-button {
   font-family: $font-family-secondary;
