@@ -76,8 +76,10 @@
 
 
 .radio__input {
-  &:checked {
-
+  &:checked ~ {
+    .radio__label::after{
+      display: inline-flex;
+    }
   }
 }
 
@@ -90,6 +92,7 @@
   grid-template-areas: "mark radio";
   cursor: pointer;
   grid-area: radio;
+  cursor: pointer;
 
   &::before {
   content: '';
@@ -122,6 +125,11 @@
   background-position: right 15px top 50%;
 }
 
+.input--phone {
+  background-image: url("../img/icons/phone.svg");
+  background-repeat:no-repeat;
+  background-position: right 15px top 50%;
+}
 .textarea {
   width: 100%;
   min-height: 150px;
