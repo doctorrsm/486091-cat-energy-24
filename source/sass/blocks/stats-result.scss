@@ -16,7 +16,7 @@
   border-radius: 3px;
   display: flex;
   flex-direction: column-reverse;
-    align-items: center;
+  align-items: center;
   padding: 14px;
   padding-bottom: 8px;
   position: relative;
@@ -40,12 +40,12 @@
 
   @media (min-width: $screen-tablet) {
     background-color: #ffffff;
-      font-size: 14px;
-      line-height: 14px;
-          width: max-content;
+    font-size: 14px;
+    line-height: 14px;
+    width: max-content;
     max-width: 100%;
     bottom: -7px;
-      padding:0 10px;
+    padding: 0 10px;
   }
 }
 

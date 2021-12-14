@@ -27,14 +27,16 @@ a {
   background-position: center top;
   pointer-events: none;
   opacity: 0.5;
+  z-index: 1000;
 
   @media (min-width: $screen-tablet) {
     background-image: url("../img/index-tabl.png");
     height: 4341px;
   }
+
   @media (min-width: $screen-desktop) {
-  background-image: url("../img/index-desc.png");
-      height: 2809px;      
+    background-image: url("../img/index-desc.png");
+    height: 2809px;
   }
 
 }

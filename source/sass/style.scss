@@ -27,33 +27,36 @@
 
 .comparison {
   @media (min-width: $screen-tablet) {
-  height: 608px;
-  overflow: hidden;
+    height: 608px;
+    overflow: hidden;
   }
 }
 
 .comparison__image-wrapper {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.comparison__image {    
-    @media (max-width: $screen-mobile) {
-        display: none;
-    }
+.comparison__image {
+  @media (max-width: $screen-mobile) {
+    display: none;
+  }
 }
-.comparison__image--phone-visible{
-    @media (max-width: $screen-mobile) {
-       display:block; 
-    }
-    
+
+.comparison__image--phone-visible {
+  @media (max-width: $screen-mobile) {
+    display: block;
+  }
+
 }
+
 .comparison__image--before {
-    position: absolute;
+  position: absolute;
 }
+
 .comparison__image--after {
-    @media (min-width: $screen-tablet) { 
-        display: block;
-    }
+  @media (min-width: $screen-tablet) {
+    display: block;
+  }
 }
 
 
@@ -61,10 +64,10 @@
 .comparison__switcher-area {}
 
 .switcher {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 34px;
 }
 
 .switcher__control-button {
