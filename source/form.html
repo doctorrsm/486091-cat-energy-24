@@ -10,6 +10,7 @@
 </head>
 
 <body class="page-body">
+ <div class="overlay overlay--form"></div>
   <header class="page-body__page-header page-header">
     <div class="container">
 
@@ -33,7 +34,7 @@
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--current">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -66,19 +67,19 @@
             <legend class="form__group-name visually-hidden">Выберите цель программы.</legend>
             <p class="form__element radio">
               <!-- Убраь блок радио и сделать его элементом-->
-              <input class="form__radio visually-hidden" type="radio" id="program-goal-loss" name="program-goal"
+              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-loss" name="program-goal"
                 value="weight loss" required checked>
-              <label class="form__element-name" for="program-goal-loss">Похудение</label>
+              <label class="form__element-name radio__label" for="program-goal-loss">Похудение</label>
             </p>
             <p class="form__element radio">
-              <input class="form__radio visually-hidden" type="radio" id="program-goal-gain" name="program-goal"
+              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-gain" name="program-goal"
                 value="weight gain" required>
-              <label class="form__element-name" for="program-goal-gain">Набор массы</label>
+              <label class="form__element-name radio__label" for="program-goal-gain">Набор массы</label>
             </p>
             <p class="form__element radio">
-              <input class="form__radio visually-hidden" type="radio" id="program-goal-undefenite" name="program-goal"
+              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-undefenite" name="program-goal"
                 value="need advice" required>
-              <label class="form__element-name" for="program-goal-undefenite">Не знаю (Нужен ваш совет)</label>
+              <label class="form__element-name radio__label" for="program-goal-undefenite">Не знаю (Нужен ваш совет)</label>
             </p>
           </fieldset>
         </div>
@@ -109,7 +110,7 @@
         </fieldset>
         <!-- Дополнительные опции -->
         <fieldset class="form__group">
-          <legend class="form__group-name">Дополительно</legend>
+          <legend class="form__group-name">Дополнительно</legend>
           <div class="form__group-checkbox-wrapper">
             <p class="form__element  checkbox">
               <input class="form__checkbox visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>

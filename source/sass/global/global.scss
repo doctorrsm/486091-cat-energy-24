@@ -41,6 +41,21 @@ a {
 
 }
 
+.overlay--form {
+  background-image: url("../img/form-mob.png");
+  height: 2135px;
+
+  @media (min-width: $screen-tablet) {
+    background-image: url("../img/form-tabl.png");
+    height: 2703px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    background-image: url("../img/form-desc.png");
+    height: 2155px;
+  }
+}
+
 .page {}
 
 body {

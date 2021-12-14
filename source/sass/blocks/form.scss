@@ -2,7 +2,8 @@
 
 .form__caption {
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 0;
+  padding-right: 10px;
   font-style: normal;
   font-family: $font-family-secondary;
   font-size: 14px;
@@ -23,7 +24,7 @@
 .form__about-cat-input-wrapper {
   padding: 39px 0 26px;
   display: grid;
-  row-gap: 27px;
+  row-gap: 23px;
 
   @media (min-width: $screen-tablet) {
     row-gap: 72px;
@@ -46,7 +47,7 @@
   line-height: 26px;
   text-align: left;
   color: #000000;
-  margin-bottom: 34px;
+  margin-bottom: 0px;
 }
 
 .form__element {
@@ -73,7 +74,9 @@
 }
 
 .form__group-radio-wrapper {
-  padding: 22px 20px 19px;
+  display:grid;
+  row-gap: 12px;
+  padding: 23px 20px 19px;
   margin: 0 -20px;
   border-top: 1px solid $grey-300;
   border-bottom: 1px solid $grey-300;
@@ -85,7 +88,7 @@
 .form__element-email {}
 
 .form__textarea-wrapper{
-  margin: 38px 0 23px;
+  margin: 38px 0 19px;
 
   @media (min-width: $screen-tablet) {
     margin: 76px 40px 65px;
