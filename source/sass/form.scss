@@ -69,15 +69,22 @@
     }
   }
 
-}
 
-.radio {
-}
+  &:focus {
+    outline: 1px solid;
+  }
 
+  &:active {
+    opacity: 0.3;
+  }
+
+
+
+}
 
 .radio__input {
-  &:checked ~ {
-    .radio__label::after{
+  &:checked~ {
+    .radio__label::after {
       display: inline-flex;
     }
   }
@@ -95,41 +102,47 @@
   cursor: pointer;
 
   &::before {
-  content: '';
-  display: inline-flex;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $grey-300;
-  border-radius: 50%;
-  grid-area: mark;
-  justify-self: center;
-  align-self: center;
-}
+    content: '';
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $grey-300;
+    border-radius: 50%;
+    grid-area: mark;
+    justify-self: center;
+    align-self: center;
+  }
+
   &::after {
-  content: '';
-  display: none;
-  width: 13px;
-  height: 13px;
-  background-color: $basic;
-  border-radius: 50%;
-  grid-area: mark;
-  justify-self: center;
-  align-self: center;
-}
+    content: '';
+    display: none;
+    width: 13px;
+    height: 13px;
+    background-color: $basic;
+    border-radius: 50%;
+    grid-area: mark;
+    justify-self: center;
+    align-self: center;
+    @media (min-width: $screen-tablet) {
+      width: 18px;
+      height: 18px;
+    }
+  }
 }
 
 
 .input--mail {
   background-image: url("../img/icons/email.svg");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: right 15px top 50%;
 }
 
 .input--phone {
   background-image: url("../img/icons/phone.svg");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: right 15px top 50%;
 }
+
 .textarea {
   width: 100%;
   min-height: 150px;
@@ -183,21 +196,43 @@
 }
 
 .checkbox {
-  display: flex;
-  align-items: center;
+
+
+  &:hover {
+    &::before {
+      border-color: #bababa;
+    }
+  }
+
+  &:focus {
+    outline: 1px solid;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
 }
 
-.checkbox::before {
-  content: '+';
+.checkbox__label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__label::before {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
+  content: '';
   height: 30px;
+  width: 30px;
+  margin-right: 16px;
   outline: 1px solid $grey-300;
   outline-offset: -1px;
-  margin-right: 16px;
+}
+
+.checkbox__input:checked ~ .checkbox__label::before{
+  content: '+';
 }
 
 .button {}

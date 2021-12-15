@@ -39,13 +39,13 @@
   background-color: #eaeaea;
 
   @media (min-width: $screen-tablet) {
-    background-color: #ffffff;
+    bottom: -7px;
+    max-width: 100%;
+    width: max-content;
+    padding: 0 10px;
     font-size: 14px;
     line-height: 14px;
-    width: max-content;
-    max-width: 100%;
-    bottom: -7px;
-    padding: 0 10px;
+    background-color: #ffffff;
   }
 }
 

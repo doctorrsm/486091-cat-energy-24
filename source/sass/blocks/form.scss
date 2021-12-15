@@ -11,6 +11,14 @@
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 39px;
+    width: 60%;
+  }
+
 }
 
 .form__group {
@@ -74,7 +82,7 @@
 }
 
 .form__group-radio-wrapper {
-  display:grid;
+  display: grid;
   row-gap: 12px;
   padding: 23px 20px 19px;
   margin: 0 -20px;
@@ -87,7 +95,7 @@
 
 .form__element-email {}
 
-.form__textarea-wrapper{
+.form__textarea-wrapper {
   margin: 38px 0 19px;
 
   @media (min-width: $screen-tablet) {
@@ -100,9 +108,7 @@
 }
 
 
-.form__textarea {
-
-}
+.form__textarea {}
 
 .form__checkbox {}
 

@@ -22,10 +22,22 @@
   line-height: 36px;
   font-weight: 400;
   color: #000000;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 35px;
+    margin-bottom: 55px;
+    padding: 0 39px;
+    font-style: normal;
+    font-family: $font-family-secondary;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #000000;
+  }
 }
 
 .page-main--under-header-position {
   @media (min-width: $screen-desktop) {
- margin-top: -165px;
+    margin-top: -165px;
   }
 }
