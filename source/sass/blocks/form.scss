@@ -1,4 +1,8 @@
-.form {}
+.form {
+  @media (min-width: $screen-tablet) {
+    padding: 0 39px;
+  }
+}
 
 .form__caption {
   margin-top: 0;
@@ -15,7 +19,6 @@
   @media (min-width: $screen-tablet) {
     font-size: 20px;
     line-height: 30px;
-    padding: 0 39px;
     width: 60%;
   }
 
@@ -71,10 +74,18 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__element-name:first-child {
   margin-right: 15px;
+  @media (min-width: $screen-tablet) {
+    margin-right: 19px;
+  }
 }
 
 .form__input {
@@ -88,6 +99,11 @@
   margin: 0 -20px;
   border-top: 1px solid $grey-300;
   border-bottom: 1px solid $grey-300;
+
+  @media (min-width: $screen-tablet) {
+  border: 1px solid $grey-100;
+  margin: 0;
+  }
 
 }
 

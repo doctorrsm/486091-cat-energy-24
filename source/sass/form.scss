@@ -2,6 +2,10 @@
   display: grid;
   row-gap: 14px;
 
+  @media (min-width: $screen-tablet) {
+    row-gap: 19px;
+  }
+
 }
 
 .input-group--contacts {
@@ -21,18 +25,25 @@
 .visually-hidden {}
 
 .input {
+  display: inline-flex;
+  align-items: center;
+  min-height: 45px;
+  padding: 14px 14px 13px;
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
+  text-transform: uppercase;
   border: none;
   outline: 1px solid #e7e7e7;
   outline-offset: -1px;
-  color: inherit;
-  padding: 14px 14px 13px;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: $font-family-secondary;
-  text-transform: uppercase;
-  display: inline-flex;
-  min-height: 45px;
-  align-items: center;
+
+  @media (min-width: $screen-tablet) {
+    min-height: 52px;
+    padding: 9px 21px 11px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &:hover {
     outline-color: $grey-300;
@@ -123,6 +134,7 @@
     grid-area: mark;
     justify-self: center;
     align-self: center;
+
     @media (min-width: $screen-tablet) {
       width: 18px;
       height: 18px;
@@ -231,7 +243,7 @@
   outline-offset: -1px;
 }
 
-.checkbox__input:checked ~ .checkbox__label::before{
+.checkbox__input:checked~.checkbox__label::before {
   content: '+';
 }
 
