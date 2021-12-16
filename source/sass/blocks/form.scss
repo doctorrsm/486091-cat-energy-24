@@ -2,6 +2,10 @@
   @media (min-width: $screen-tablet) {
     padding: 0 39px;
   }
+
+  @media (min-width: $screen-desktop) {
+    padding: 0;
+  }
 }
 
 .form__caption {
@@ -22,6 +26,9 @@
     width: 60%;
   }
 
+  @media (min-width: $screen-desktop) {
+    width: 32%;
+  }
 }
 
 .form__group {
@@ -39,11 +46,11 @@
 
   @media (min-width: $screen-tablet) {
     row-gap: 72px;
-    padding: 66px 0 71px;
+    padding: 66px 0 74px;
   }
 
   @media (min-width: $screen-desktop) {
-    padding: 61px 0 69px;
+    padding: 66px 0 68px;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
@@ -59,6 +66,11 @@
   text-align: left;
   color: #000000;
   margin-bottom: 0px;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__element {
@@ -83,6 +95,7 @@
 
 .form__element-name:first-child {
   margin-right: 15px;
+
   @media (min-width: $screen-tablet) {
     margin-right: 19px;
   }
@@ -101,8 +114,10 @@
   border-bottom: 1px solid $grey-300;
 
   @media (min-width: $screen-tablet) {
-  border: 1px solid $grey-100;
-  margin: 0;
+    border: 1px solid $grey-100;
+    margin: 0;
+    padding: 31px 34px 31px;
+    row-gap: 22px;
   }
 
 }
@@ -112,14 +127,14 @@
 .form__element-email {}
 
 .form__textarea-wrapper {
-  margin: 38px 0 19px;
+  padding: 38px 0 19px;
 
   @media (min-width: $screen-tablet) {
-    margin: 76px 40px 65px;
+    padding: 78px 0 61px;
   }
 
   @media (min-width: $screen-desktop) {
-    margin: 76px 0 67px;
+    padding: 75px 0 64px;
   }
 }
 
@@ -130,8 +145,28 @@
 
 .form__button {}
 
+.form__submit-wrapper {
+  @media (min-width: $screen-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    align-items: center;
+  }
+
+  @media (min-width: $screen-desktop) {
+    column-gap: 80px;
+  }
+}
+
 .form__footnote {
   color: #000000;
   text-align: center;
   margin-top: 19px;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
 }

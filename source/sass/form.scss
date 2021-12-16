@@ -103,32 +103,41 @@
 
 .radio__label {
   display: grid;
+  align-items: center;
   grid-template-columns: 30px auto;
   grid-template-rows: 30px;
-  align-items: center;
-  column-gap: 15px;
   grid-template-areas: "mark radio";
   cursor: pointer;
-  grid-area: radio;
   cursor: pointer;
+  column-gap: 15px;
+  grid-area: radio;
+
+  @media (min-width: $screen-tablet) {
+    column-gap: 25px;
+  }
 
   &::before {
-    content: '';
     display: inline-flex;
-    width: 30px;
+    content: '';
     height: 30px;
+    width: 30px;
     border: 1px solid $grey-300;
     border-radius: 50%;
     grid-area: mark;
     justify-self: center;
     align-self: center;
+
+    @media (min-width: $screen-tablet) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &::after {
-    content: '';
     display: none;
-    width: 13px;
+    content: '';
     height: 13px;
+    width: 13px;
     background-color: $basic;
     border-radius: 50%;
     grid-area: mark;
@@ -156,24 +165,29 @@
 }
 
 .textarea {
-  width: 100%;
   min-height: 150px;
+  width: 100%;
+  padding: 10px 14px 15px;
+  font-style: normal;
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: inherit;
+  color: $grey-500;
+  text-transform: uppercase;
+  text-transform: uppercase;
   border: none;
   border: none;
   outline: 1px solid #e7e7e7;
   outline-offset: -1px;
-  color: inherit;
-  padding: 10px 14px 15px;
-  text-transform: uppercase;
-  font-family: $font-family-secondary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
 
-  text-transform: uppercase;
-
-  color: $grey-500;
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px 15px;
+    min-height: 173px;
+  }
 
 
   &:hover {
@@ -199,11 +213,16 @@
   padding: 34px 0;
 
   @media (min-width: $screen-tablet) {
-    padding: 57px 54px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 32px;
+    padding: 57px 0 54px;
   }
 
   @media (min-width: $screen-desktop) {
-    padding: 57px 61px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 57px 0 61px;
+    column-gap: 80px;
   }
 }
 
@@ -241,6 +260,12 @@
   margin-right: 16px;
   outline: 1px solid $grey-300;
   outline-offset: -1px;
+
+  @media (min-width: $screen-tablet) {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+  }
 }
 
 .checkbox__input:checked~.checkbox__label::before {

@@ -34,6 +34,9 @@
     font-weight: 400;
     color: #000000;
   }
+  @media (min-width: $screen-desktop) {
+ padding: 0;
+  }
 }
 
 .page-main--under-header-position {
