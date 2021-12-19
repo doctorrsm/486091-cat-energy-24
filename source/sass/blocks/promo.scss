@@ -11,20 +11,6 @@
   }
 }
 
-.promo--icon {
-  .promo__item::before {
-    position: absolute;
-    content: '';
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    background-color: $basic;
-  }
-}
-
-.promo--icon-slim {}
-
-.promo--icon-pro {}
 
 .promo__list {
 
@@ -42,7 +28,7 @@
 }
 
 .promo__item {
-
+  position: relative;
   padding: 30px 27px 18px 20px;
   background-color: $grey-100;
 
@@ -57,6 +43,42 @@
   }
 }
 
+
+.promo__item--icon::before {
+  position: absolute;
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: $basic;
+  top: 23px;
+  left: 22px;
+}
+.promo__item--icon::after {
+  position: absolute;
+  content: '';
+  height: 70px;
+  width: 100px;
+
+
+  background-repeat:no-repeat;
+  background-position: 10px 20px;
+
+}
+.promo__item--icon-slim::after {
+  top: 0px;
+  left: 19px;
+  background-size: 36px 50px;
+  background-image: url("../../img/icons/cat-slim.svg");
+
+}
+
+.promo__item--icon-pro::after {
+  top: 3px;
+  left: 2px;
+  background-size: 67px 50px;
+  background-image: url("../../img/icons/cat-pro.svg");
+}
 
 .promo__item-title {
   margin-top: 0;
@@ -142,8 +164,7 @@
 }
 
 .promo__item-link:hover::after,
-.promo__item-link:active::after
-{
+.promo__item-link:active::after {
   background-position: 0 50%;
 }
 

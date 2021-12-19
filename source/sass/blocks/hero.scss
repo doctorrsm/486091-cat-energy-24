@@ -13,7 +13,7 @@
   @media (min-width: $screen-tablet) {
     text-align: left;
     padding-top: 34px;
-    padding-bottom: 526px;
+    padding-bottom: 540px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -31,10 +31,16 @@
   top: 0;
   right: 0;
   background-color: $basic;
-  background-image: url("../../img/backgrounds/index-background-desktop-large.jpg");
+  background-image: url("../../img/backgrounds/hero-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/backgrounds/hero-mobile@2x.jpg");
+  }
+
+
+
 
   @media (min-width: $screen-tablet) and (max-width: ($screen-desktop - 1px)) {
     display: none;
@@ -47,6 +53,11 @@
     background-size: cover;
     background-position: 100% 100%;
     background-color: inherit;
+
+    background-image: url("../../img/backgrounds/hero-desktop.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/hero-desktop@2x.jpg");
+    }
   }
 }
 
@@ -77,7 +88,7 @@
   z-index: 1;
 
   @media (min-width: $screen-tablet) {
-    max-width: 420px;
+    padding-right: 60px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -86,8 +97,6 @@
   }
 
 }
-
-
 
 .hero__title {
   margin-top: 0;
@@ -129,6 +138,9 @@
 .hero_product-image-wrapper {
   margin: 0;
   margin-bottom: 3px;
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+  }
 }
 
 .hero__product-image {
@@ -136,7 +148,8 @@
   margin: 0 auto;
 
   @media (min-width: $screen-tablet) {
-    position: absolute;
+    width: 100%;
+    height: auto;
   }
 }
 

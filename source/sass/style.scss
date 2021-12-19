@@ -22,18 +22,31 @@
 
 .comparison {
   @media (min-width: $screen-tablet) {
-    height: 608px;
-    overflow: hidden;
+
   }
 }
 
 .comparison__image-wrapper {
   margin-bottom: 20px;
+
+  @media (min-width: $screen-tablet) {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+
 }
 
 .comparison__image {
   @media (max-width: $screen-mobile) {
     display: none;
+  }
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    height: auto;
+
   }
 }
 
@@ -44,12 +57,20 @@
 }
 
 .comparison__image--before {
-  position: absolute;
+  @media (min-width: $screen-tablet) {
+    display: block;
+
+  }
 }
 
 .comparison__image--after {
   @media (min-width: $screen-tablet) {
+    position: absolute;
     display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+
   }
 }
 
@@ -60,25 +81,67 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 34px;
+  @media (min-width: $screen-tablet) {
+    padding: 79px 68px 5px;
+  }
 }
 
 .switcher__control-button {
-  font-family: $font-family-secondary;
   font-style: normal;
-  font-weight: 400;
+  font-family: $font-family-secondary;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
+  font-weight: 400;
   color: #000000;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: inherit;
+  border: none;
+  text-align: center;
+
+  &:hover {
+    border-bottom: 1px solid #919191;
+  }
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted #919191;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .switcher__button--before {}
 
-.switcher__indicator {}
+.switcher__indicator {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 14px;
+  width: 86px;
+  padding: 0 5px;
+  background-color: #ffffff;
+  border: 1px solid $grey-300;
+  border-radius: 6px;
+  transition: 0.3s;
 
-.switcher__indicator--before {}
+  @media (min-width: $screen-tablet) {
+    display: none;
+  }
+}
+
+.switcher__indicator::before {
+  content: '';
+  height: 6px;
+  width: 50%;
+  background-color: $basic;
+  border-radius: 6px;
+}
+
+.switcher__indicator--before {
+  justify-content: flex-start;
+}
 
 .switcher__button--after {}
 

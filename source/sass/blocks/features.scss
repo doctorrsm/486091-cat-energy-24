@@ -48,17 +48,32 @@
 
 }
 
-.features__icon {
-  display: inline-flex;
-  height: 60px;
-  width: 60px;
-  background-color: $basic;
-  background-position: center;
-  background-repeat: no-repeat;
+
+
+.features__item--leaf {
+  .features__text::before {
+    background-image: url("../../img/icons/leaf.svg");
+  }
 }
 
-.features__icon--leaf {
+.features__item--tub {
+  .features__text::before {
+    background-image: url("../../img/icons/tub.svg");
+  }
 }
+
+.features__item--eat {
+  .features__text::before {
+    background-image: url("../../img/icons/eat.svg");
+  }
+}
+
+.features__item--alarm {
+  .features__text::before {
+    background-image: url("../../img/icons/alarm.svg");
+  }
+}
+
 
 .features__text {
   display: grid;
@@ -78,23 +93,18 @@
   }
 }
 
-.features__text:before {
+.features__text::before {
   display: inline-flex;
   content: '';
   height: 60px;
   width: 60px;
   background-color: $basic;
+  background-repeat: no-repeat;
+  background-position: center;
+
   @media (min-width: $screen-tablet) {
     width: 80px;
     height: 80px;
   }
 }
 
-.features__icon--tub {
-}
-
-.features__icon--eat {
-}
-
-.features__icon--alarm {
-}

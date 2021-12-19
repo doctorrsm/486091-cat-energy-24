@@ -5,7 +5,7 @@
   @include list-reset;
 
   @media (max-width: $screen-mobile) {
-    width: calc(100% + 40px);
+    width: 100vw;
   }
 
 
