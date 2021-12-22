@@ -12,7 +12,9 @@
   }
 
   @media (min-width: $screen-desktop) {
-    padding: 43px 0 65px;
+    padding: 0;
+    padding-bottom: 26px;
+    background: linear-gradient(to top, #eaeaea 0%, #eaeaea 72%, #ffffff 72%, #ffffff 100%);
   }
 }
 
@@ -20,14 +22,14 @@
   @media (min-width: $screen-desktop) {
     display: grid;
     column-gap: 80px;
-    grid-template-areas:
-      "header header"
-      "text comparison"
-      "stats comparison";
     grid-template-columns: 1fr 1fr;
   }
 }
-
+.example__content-wrapper {
+  @media (min-width: $screen-desktop) {
+  padding-top: 44px;
+  }
+}
 .example__title {
   margin-top: 0;
   margin-bottom: 40px;
@@ -45,7 +47,6 @@
   }
 
   @media (min-width: $screen-desktop) {
-    grid-area: header;
     margin-bottom: 148px;
   }
 }
@@ -61,7 +62,6 @@
   }
 
   @media (min-width: $screen-desktop) {
-    grid-area: text;
     padding-right: 139px;
   }
 }
@@ -80,7 +80,10 @@
   }
 
   @media (min-width: $screen-desktop) {
-    grid-area: stats;
+    grid-template-columns: 1fr;
+    padding-right: 152px;
+    padding-top: 15px;
+    row-gap: 36px;
   }
 }
 
@@ -94,6 +97,5 @@
 
 .example__comparison {
   @media (min-width: $screen-desktop) {
-    grid-area: comparison;
   }
 }
