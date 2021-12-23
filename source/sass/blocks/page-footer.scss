@@ -22,3 +22,9 @@
   padding: 39px 0 31px;
   cursor: pointer;
 }
+
+.page-footer__contacts {
+  @media (min-width: $screen-desktop) {
+  position: relative;
+  }
+}

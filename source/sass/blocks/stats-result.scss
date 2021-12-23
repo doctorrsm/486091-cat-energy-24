@@ -112,11 +112,14 @@
   @media (min-width: $screen-tablet) {
     padding-right: 5px;
   }
+  @media (min-width: $screen-desktop) {
+  margin-left: 64px;
+  }
 }
 
 .stats-result-plain__description {
   @media (min-width: $screen-tablet) {
     margin-bottom: 8px;
-    margin-right: 64px;
   }
+
 }

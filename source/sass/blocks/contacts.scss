@@ -7,8 +7,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-
 }
 
 .contacts__map {
@@ -28,7 +26,7 @@
   @media (min-width: $screen-tablet) {}
 
   @media (min-width: $screen-desktop) {
-
+    position: absolute;
     column-gap: 90px;
   }
 
@@ -79,4 +77,11 @@
     text-align: right;
   }
 
+}
+
+.contacts__city-name {
+  @media (min-width: $screen-tablet) {
+  display: inline-block;
+  margin-top: 14px;
+  }
 }

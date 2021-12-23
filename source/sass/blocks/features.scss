@@ -71,20 +71,28 @@
 }
 
 .features__item--one::before {
-  content: '1';
-  right: 17px;
+  @media (min-width: $screen-tablet) {
+    content: '1';
+    right: 17px;
+  }
 }
 
 .features__item--two::before {
-  content: '2';
+  @media (min-width: $screen-tablet) {
+    content: '2';
+  }
 }
 
 .features__item--three::before {
-  content: '3';
+  @media (min-width: $screen-tablet) {
+    content: '3';
+  }
 }
 
 .features__item--four::before {
-  content: '4';
+  @media (min-width: $screen-tablet) {
+    content: '4';
+  }
 }
 
 .features__item--leaf {
