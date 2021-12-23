@@ -2,8 +2,8 @@
   @media (min-width: $screen-tablet) {
     display:flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 .page-footer__links {
@@ -16,10 +16,15 @@
 }
 }
 .page-footer__logo {
-  padding: 39px 0 31px;
-  display: block;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 39px 0 31px;
   cursor: pointer;
+}
+
+.page-footer__contacts {
+  @media (min-width: $screen-desktop) {
+  position: relative;
+  }
 }

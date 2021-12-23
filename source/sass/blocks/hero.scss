@@ -1,7 +1,7 @@
 .hero {
   padding-top: 27px;
   color: #ffffff;
-  background-color: $basic;
+  //background-color: $basic;
   /*
   background-image: url(../img/backgrounds/index-background-overlay.jpg);
   background-color: $basic;
@@ -9,32 +9,97 @@
   background-repeat: no-repeat;
   */
   text-align: center;
-  @media (min-width: $screen-tablet){
+
+  @media (min-width: $screen-tablet) {
     text-align: left;
-    padding-top: 40px;
+    padding-top: 34px;
+    padding-bottom: 527px;
   }
+
   @media (min-width: $screen-desktop) {
-    padding-top: 58px;
+    padding-top: 223px;
+    padding-bottom: 173px;
   }
 }
-/*.hero:before {
+
+.hero::before {
   content: '';
   position: absolute;
   width: 100vw;
   height: 302px;
   left: 0;
+  top: 0;
+  right: 0;
   background-color: $basic;
-  background-image: url(../img/backgrounds/index-background-overlay.jpg);
-
-  background-size: contain;
+  background-image: url("../../img/backgrounds/hero-mobile.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-}*/
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/backgrounds/hero-mobile@2x.jpg");
+  }
+
+
+
+
+  @media (min-width: $screen-tablet) and (max-width: ($screen-desktop - 1px)) {
+    display: none;
+  }
+
+  @media (min-width: $screen-desktop) {
+    left: 50%;
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-color: inherit;
+
+    background-image: url("../../img/backgrounds/hero-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/hero-desktop@2x.jpg");
+    }
+  }
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 302px;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $screen-tablet) and (max-width: ($screen-desktop - 1px)) {
+    display: none;
+  }
+
+  @media (min-width: $screen-desktop) {
+    right: 0;
+    left: auto;
+    width: 50vw;
+    height: 100%;
+  }
+}
+
 .hero__content-wrapper {
+  position: relative;
+  z-index: 1;
+
   @media (min-width: $screen-tablet) {
-    max-width: 420px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding: 13px 80px;
+    min-width: 460px;
   }
 
 }
+
 .hero__title {
   margin-top: 0;
   margin-bottom: 25px;
@@ -42,7 +107,21 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    margin-bottom: 42px;
+    padding: 0 87px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding: 0;
+    width: 50%;
+  }
 }
+
 .hero__slogan {
   margin-top: 0px;
   margin-bottom: 29px;
@@ -51,15 +130,66 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+    padding: 0 89px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 50px;
+    padding: 0;
+  }
 }
-.hero_product-image-wrapper{
+
+.hero_product-image-wrapper {
   margin: 0;
   margin-bottom: 3px;
+
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+  }
+
+  @media (min-width: $screen-desktop) {
+    top: -69px;
+    left: 448px;
+  }
 }
+
 .hero__product-image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    height: auto;
+  }
 }
+
 .hero__action-button {
-  width: 100%;
+
+  @media (max-width: $screen-mobile) {
+    width: 100%;
+  }
+
+  @media (min-width: $screen-tablet) {
+    position: relative;
+    display: inline-flex;
+    min-height: 54px;
+    width: auto;
+    margin-top: 27px;
+    margin-left: 4px;
+    margin-left: 90px;
+    padding-right: 26px;
+    padding-left: 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin: 0;
+  }
 }

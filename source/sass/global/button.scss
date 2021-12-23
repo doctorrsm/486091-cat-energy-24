@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 10px;
   padding-top: 12px;
   padding-bottom: 10px;
@@ -19,9 +18,23 @@
   text-align: center;
   min-height: 40px;
 
+  &--submit{
+    font-size: 16px;
+    line-height: 20px;
+    @media (min-width: $screen-tablet) {
+      min-height: 52px;
+      font-size: 20px;
+      line-height: 20px;
+      display: inline-flex;
+      padding: 14px 26px;
+      min-width: 282px;
+    }
+  }
+
   &:hover {
     background-color: $basic-dark;
   }
+
   &:active {
     color: #8ec36d;
   }
@@ -31,9 +44,11 @@
 .button--light {
   background-color: $grey-100;
   color: $grey-500;
+
   &:hover {
     background-color: $grey-200;
   }
+
   &:active {
     color: #b9b9b9;
   }

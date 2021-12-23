@@ -1,0 +1,87 @@
+.contacts {
+
+}
+
+.contacts__map-wrapper {
+ // background-image: url("../img/site/map-shop-location.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contacts__map {
+  display: block;
+  border: none;
+  height: 362px;
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.contacts__address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $screen-tablet) {}
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    column-gap: 90px;
+  }
+
+}
+
+.contacts__address-wrapper {
+
+  padding: 26px 0;
+
+
+  @media (min-width: $screen-tablet) {
+    padding: 60px 40px 60px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+  }
+}
+
+.contacts__text {
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  color: #111111;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contacts__shop-address {
+  line-height: 20px;
+  font-style: normal;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $screen-tablet) and (max-width: ($screen-desktop - 1px)) {
+    text-align: right;
+  }
+
+}
+
+.contacts__city-name {
+  @media (min-width: $screen-tablet) {
+  display: inline-block;
+  margin-top: 14px;
+  }
+}
