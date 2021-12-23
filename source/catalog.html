@@ -21,7 +21,7 @@
         <ul class="navbar__main-nav main-nav main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link">Каталог продукции</a></li>
-          <li class="main-nav__item"><a class="main-nav__link"   href="form.html">Подбор программы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </div>
@@ -34,8 +34,13 @@
         <ul class="catalog__list">
           <li class="catalog__item catalog-card">
             <div class="catalog-card__image-wrapper">
-              <img class="catalog-card__image" src="img/shop/cat-energy-pro-500-chicken.png" width="68" height="86"
-                alt="Cat Energy PRO 500 грамм со вкусом курицы." />
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="img/shop/cat-energy-pro-500-chicken-tablet.png 1x, img/shop/cat-energy-pro-500-chicken-tablet@2x.png 2x">
+                <img class="catalog-card__image" src="img/shop/cat-energy-pro-500-chicken.png"
+                  srcset="img/shop/cat-energy-pro-500-chicken.png 1x, img/shop/cat-energy-pro-500-chicken@2x.png 2x"
+                  width="140" height="112" alt="Cat Energy PRO 500 грамм со вкусом курицы." />
+              </picture>
             </div>
             <div class="catalog-card__description">
               <h3 class="catalog-card__description-title">Cat Energy PRO 500 г</h3>
