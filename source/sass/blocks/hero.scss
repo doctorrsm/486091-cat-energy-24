@@ -48,8 +48,8 @@
   }
 
   @media (min-width: $screen-desktop) {
-    left: 50%;
-    width: auto;
+    left: auto;
+    width: 50vw;
     height: 100%;
     background-size: cover;
     background-position: 100% 100%;

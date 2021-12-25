@@ -6,7 +6,6 @@
 @import "blocks/container.scss";
 @import "blocks/page-header";
 @import "blocks/navbar";
-@import "blocks/logo";
 @import "blocks/main-nav";
 @import "blocks/page-main";
 @import "blocks/hero";
@@ -249,9 +248,25 @@
   align-items: center;
   justify-content: center;
   padding: 15px 18px;
+
+  &:hover {
+    .social-icon{
+      stroke: $basic;
+    }
+  }
+  &:active {
+    .social-icon{
+      stroke: $basic;
+      opacity: 0.3;
+    }
+  }
 }
 
-.social-icon {}
+.social-icon {
+  stroke: $grey-400;
+  stroke-width: 1;
+  fill: none;
+}
 
 .social-icon--vkontakte {}
 
