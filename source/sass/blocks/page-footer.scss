@@ -15,12 +15,16 @@
     padding: 28px 0;
 }
 }
-.page-footer__logo {
+.page-footer__logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 39px 0 31px;
   cursor: pointer;
+}
+
+.page-footer__logo-shop-name {
+
 }
 
 .page-footer__contacts {
