@@ -1,9 +1,8 @@
 .navbar {
-  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 23px 0 24px;
+  padding: 12px 0 12px;
   z-index: 2;
 
   @media (min-width: $screen-tablet) {
@@ -18,9 +17,31 @@
 
 }
 
+.navbar__logo {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+  }
+}
+
+.navbar__logo-icon {
+
+  @media (min-width: $screen-tablet) {
+    position: static;
+    transform: initial;
+  }
+}
+
+.navbar__logo-shop-name {
+  @media (max-width: $screen-mobile) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
 .navbar__toggle {
-  position: absolute;
-  right: 0;
   height: 18px;
   width: 24px;
   cursor: pointer;
@@ -33,6 +54,23 @@
   @media (min-width: $screen-tablet) {
     display: none;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
 }
 
 .navbar__toggle--active {
@@ -40,8 +78,29 @@
 }
 
 .navbar__main-nav {
+  z-index: 2;
+
   @media(max-width: $screen-mobile) {
     position: absolute;
     top: 66px;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+.navbar--no-js {
+  @media (max-width: $screen-mobile) {
+    flex-wrap: wrap;
+    .navbar__main-nav {
+      display: block;
+      position: static;
+    }
+    .navbar__toggle {
+      display: none;
+    }
+    .navbar__logo-shop-name {
+      top: 31px;
+    }
   }
 }

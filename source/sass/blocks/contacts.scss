@@ -28,6 +28,9 @@
   @media (min-width: $screen-desktop) {
     position: absolute;
     column-gap: 90px;
+    background-color: #ffffff;
+    padding: 60px 83px;
+    top: 95px;
   }
 
 }
@@ -42,9 +45,8 @@
   }
 
   @media (min-width: $screen-desktop) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #ffffff;
+
+    padding: 0;
   }
 }
 

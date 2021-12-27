@@ -29,6 +29,7 @@
   align-items: center;
   min-height: 45px;
   padding: 14px 14px 13px;
+  padding-right: 40px;
   font-family: $font-family-secondary;
   font-size: 16px;
   line-height: 18px;
@@ -54,11 +55,26 @@
     outline-width: 2px;
     outline-offset: -2px;
   }
+  &:focus ~ .input__icon {
+    stroke: $basic;
+  }
+
+  &:focus ~ .input__icon--phone {
+    fill: $basic;
+    stroke: none;
+  }
 
   &:invalid {
     outline-color: $error;
     outline-width: 2px;
     outline-offset: -2px;
+  }
+  &:invalid ~ .input__icon {
+    stroke: $error;
+  }
+  &:invalid~ .input__icon--phone {
+    fill: $error;
+    stroke: none;
   }
 }
 
@@ -67,6 +83,15 @@
   outline-width: 2px;
   outline-offset: -2px;
 }
+.input-error ~ .input__icon {
+  stroke: $error;
+}
+
+.input-error ~ .input__icon--phone {
+  fill: $error;
+    stroke: none;
+}
+
 
 .input--number {}
 
@@ -75,7 +100,7 @@
 
 
   &:hover {
-    &::before {
+    .radio__label::before {
       border-color: #bababa;
     }
   }
@@ -83,6 +108,11 @@
 
   &:focus {
     outline: 1px solid;
+    outline-offset: 10px;
+  }
+  &:focus-within {
+    outline: 1px solid;
+    outline-offset: 10px;
   }
 
   &:active {
@@ -91,6 +121,17 @@
 
 
 
+}
+
+.input__icon {
+  stroke: $grey-600;
+  position: absolute;
+  right: 15px;
+}
+
+.input__icon--phone {
+  fill: #000000;
+  stroke: none;
 }
 
 .radio__input {
@@ -153,17 +194,12 @@
 
 
 .input--mail {
-  background-image: url("../img/icons/email.svg");
-  background-repeat: no-repeat;
-  background-position: right 15px top 50%;
+
 }
 
 .input--phone {
-  background-image: url("../img/icons/phone.svg");
-  background-repeat: no-repeat;
-  background-position: right 15px top 50%;
-}
 
+}
 .textarea {
   min-height: 150px;
   width: 100%;

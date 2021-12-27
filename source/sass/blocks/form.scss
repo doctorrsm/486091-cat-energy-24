@@ -5,6 +5,7 @@
 
   @media (min-width: $screen-desktop) {
     padding: 0;
+    padding-bottom: 83px;
   }
 }
 
@@ -77,6 +78,7 @@
   display: flex;
   align-items: center;
   margin: 0;
+  position: relative;
 }
 
 .form__element-name {
@@ -103,7 +105,9 @@
 
 .form__input {
   flex-grow: 1;
+
 }
+
 
 .form__group-radio-wrapper {
   display: grid;
