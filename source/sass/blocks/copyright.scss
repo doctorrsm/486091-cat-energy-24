@@ -1,0 +1,32 @@
+.copyright {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+
+  &:hover {
+    .copyright__logo {
+      fill: $basic;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__name {
+  color: $grey-500;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-right: 24px;
+  }
+}
+
+.copyright__logo {
+  fill: $grey-400;
+}

@@ -147,6 +147,25 @@
 
 .form__checkbox {}
 
+.form__group-checkbox-wrapper {
+  display: grid;
+  row-gap: 12px;
+  padding: 34px 0;
+
+  @media (min-width: $screen-tablet) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 32px;
+    padding: 57px 0 54px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 57px 0 61px;
+    column-gap: 80px;
+  }
+}
+
 .form__button {}
 
 .form__submit-wrapper {

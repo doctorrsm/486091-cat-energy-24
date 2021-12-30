@@ -1,0 +1,118 @@
+.switcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 34px;
+
+  @media (min-width: $screen-tablet) {
+    padding: 40px 10px 5px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding: 9px 0;
+    margin-left: -8px;
+    margin-right: 7px;
+  }
+}
+
+.switcher__control-button {
+  font-style: normal;
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: inherit;
+  border: none;
+  text-align: center;
+
+  &:hover {
+    border-bottom: 1px solid #919191;
+  }
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted #919191;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.switcher__button--before {}
+
+.switcher__indicator {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 14px;
+  width: 86px;
+  padding: 0 5px;
+  background-color: #ffffff;
+  border: 1px solid $grey-300;
+  border-radius: 6px;
+  transition: 0.3s;
+
+  @media (min-width: $screen-tablet) {
+    display: none;
+  }
+}
+
+.switcher__indicator::before {
+  content: '';
+  height: 6px;
+  width: 50%;
+  background-color: $basic;
+  border-radius: 6px;
+}
+
+.switcher__indicator--before {
+  justify-content: flex-start;
+}
+
+.switcher__button--after {}
+
+
+
+.switcher__range-input {
+  @media (max-width: $screen-mobile) {
+    display: none;
+  }
+  position: relative;
+  flex-grow: 1;
+  margin: 0 23px;
+}
+
+.switcher__range-line {
+  height: 6px;
+  border-radius: 6px;
+  background-color: $grey-300;
+}
+.swither__range-button {
+  left:50%;
+  top: -14px;
+  transform: translateX(-50%);
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  border: 1px solid $grey-300;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swither__range-button::before {
+  content: '';
+  height: 8px;
+  width: 8px;
+  display: inline-flex;
+  background-color: $basic;
+  border-radius: 50%;
+
+}

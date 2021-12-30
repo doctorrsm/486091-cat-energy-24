@@ -32,3 +32,9 @@
   position: relative;
   }
 }
+
+.page-footer__socials {
+  @media (min-width: $screen-tablet) {
+    margin-right: -28px;
+  }
+}

@@ -1,0 +1,23 @@
+.input-group {
+  display: grid;
+  row-gap: 14px;
+
+  @media (min-width: $screen-tablet) {
+    row-gap: 19px;
+  }
+
+}
+
+.input-group--contacts {
+  padding: 35px 0 24px;
+
+  @media (min-width: $screen-tablet) {
+    padding: 76px 0 65px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding: 76px 0 69px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}

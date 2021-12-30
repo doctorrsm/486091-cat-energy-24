@@ -1,0 +1,96 @@
+.input {
+  display: inline-flex;
+  align-items: center;
+  min-height: 45px;
+  padding: 14px 14px 13px;
+  padding-right: 40px;
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
+  text-transform: uppercase;
+  border: none;
+  outline: 1px solid #e7e7e7;
+  outline-offset: -1px;
+
+  @media (min-width: $screen-tablet) {
+    min-height: 52px;
+    padding: 9px 21px 11px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    outline-color: $grey-300;
+  }
+
+  &:focus {
+    outline-color: $grey-500;
+    outline-width: 2px;
+    outline-offset: -2px;
+  }
+  &:focus ~ .input__icon {
+    stroke: $basic;
+  }
+
+  &:focus ~ .input__icon--phone {
+    fill: $basic;
+    stroke: none;
+  }
+
+  &:invalid {
+    outline-color: $error;
+    outline-width: 2px;
+    outline-offset: -2px;
+  }
+  &:invalid ~ .input__icon {
+    stroke: $error;
+  }
+  &:invalid~ .input__icon--phone {
+    fill: $error;
+    stroke: none;
+  }
+}
+
+.input--error {
+  outline-color: $error;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+.input--error ~ .input__icon {
+  stroke: $error;
+}
+
+.input--error ~ .input__icon--phone {
+  fill: $error;
+    stroke: none;
+}
+
+.input--number::-webkit-outer-spin-button,
+.input--number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input--number {
+  -moz-appearance: textfield;
+}
+
+.input__icon {
+  stroke: $grey-600;
+  position: absolute;
+  right: 15px;
+}
+
+.input__icon--phone {
+  fill: #000000;
+  stroke: none;
+}
+
+.input--mail {
+
+}
+
+.input--phone {
+
+}

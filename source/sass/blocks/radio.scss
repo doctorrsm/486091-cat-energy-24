@@ -1,0 +1,87 @@
+.radio {
+  color: $grey-600;
+
+
+  &:hover {
+    .radio__label::before {
+      border-color: #bababa;
+    }
+  }
+
+
+  &:focus {
+    outline: 1px solid;
+    outline-offset: 10px;
+  }
+  &:focus-within {
+    outline: 1px solid;
+    outline-offset: 10px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+
+
+}
+
+
+
+.radio__input {
+  &:checked~ {
+    .radio__label::after {
+      display: inline-flex;
+    }
+  }
+}
+
+.radio__label {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30px auto;
+  grid-template-rows: 30px;
+  grid-template-areas: "mark radio";
+  cursor: pointer;
+  cursor: pointer;
+  column-gap: 15px;
+  grid-area: radio;
+
+  @media (min-width: $screen-tablet) {
+    column-gap: 25px;
+  }
+
+  &::before {
+    display: inline-flex;
+    content: '';
+    height: 30px;
+    width: 30px;
+    border: 1px solid $grey-300;
+    border-radius: 50%;
+    grid-area: mark;
+    justify-self: center;
+    align-self: center;
+
+    @media (min-width: $screen-tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &::after {
+    display: none;
+    content: '';
+    height: 13px;
+    width: 13px;
+    background-color: $basic;
+    border-radius: 50%;
+    grid-area: mark;
+    justify-self: center;
+    align-self: center;
+
+    @media (min-width: $screen-tablet) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

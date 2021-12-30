@@ -15,7 +15,7 @@ a {
 }
 
 .overlay {
- display: none;
+ //display: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -52,6 +52,21 @@ a {
 
   @media (min-width: $screen-desktop) {
     background-image: url("../img/form-desc.png");
+    height: 2155px;
+  }
+}
+
+.overlay--catalog {
+  background-image: url("../../img/catalog-mob.png");
+  height: 2135px;
+
+  @media (min-width: $screen-tablet) {
+    background-image: url("../img/catalog-tabl.png");
+    height: 2703px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    background-image: url("../img/catalog-desc.png");
     height: 2155px;
   }
 }

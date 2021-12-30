@@ -1,0 +1,8 @@
+.catalog {}
+
+.catalog__list {
+  @include list-reset;
+  display: grid;
+}
+
+.catalog__item {}

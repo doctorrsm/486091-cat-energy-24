@@ -1,0 +1,42 @@
+.textarea {
+  min-height: 150px;
+  width: 100%;
+  padding: 10px 14px 15px;
+  font-style: normal;
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: inherit;
+  color: $grey-500;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  border: none;
+  border: none;
+  outline: 1px solid #e7e7e7;
+  outline-offset: -1px;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px 15px;
+    min-height: 173px;
+  }
+
+
+  &:hover {
+    outline-color: $grey-300;
+  }
+
+  &:focus {
+    outline-color: $grey-500;
+    outline-width: 2px;
+    outline-offset: -2px;
+  }
+
+  &:invalid {
+    outline-color: $error;
+    outline-width: 2px;
+    outline-offset: -2px;
+  }
+}

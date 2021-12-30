@@ -4,9 +4,9 @@
   max-width: 320px;
 
   @media (min-width: $screen-tablet) {
-    box-sizing:content-box;
-  max-width: 708px;
-  padding: 0 30px;
+    box-sizing: content-box;
+    max-width: 708px;
+    padding: 0 30px;
   }
 
   @media (min-width: $screen-desktop) {

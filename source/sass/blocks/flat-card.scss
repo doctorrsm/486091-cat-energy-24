@@ -1,0 +1,50 @@
+.flat-card {
+  border-top: 1px solid $grey-300;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.flat-card:last-of-type {
+  border-bottom: 1px solid $grey-300;
+}
+
+.flat-card__description-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $grey-600;
+}
+
+.flat-card__description-list {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.flat-card__description-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flat-card__description-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $grey-500;
+}
+
+.flat-card__description-value {
+  margin-left: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $grey-500;
+}
+
+.flat-card__button {}

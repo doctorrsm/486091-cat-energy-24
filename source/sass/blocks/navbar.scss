@@ -39,6 +39,12 @@
     transform: translate(-50%, -50%);
   }
 }
+.navbar__logo-color-light {
+  fill: #111111;
+  @media (min-width: $screen-tablet) {
+    fill: $grey-500;
+  }
+}
 
 
 .navbar__toggle {
