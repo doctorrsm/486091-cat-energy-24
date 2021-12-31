@@ -1,0 +1,15 @@
+.catalog {}
+.catalog * {
+  outline: 1px solid green;
+}
+.catalog__list {
+  @include list-reset;
+  display: grid;
+  @media (min-width: $screen-tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+.catalog__item {}
+

@@ -1,0 +1,25 @@
+.additional-products {
+  padding: 25px 0 35px;
+}
+
+.additional-products__title {
+  font-family: $font-family-secondary;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.additional-products__list {
+  @include list-reset;
+}
+
+.additional-products__item {}
+
+.additional-products__special-offer {
+  margin-top: 31px;
+}

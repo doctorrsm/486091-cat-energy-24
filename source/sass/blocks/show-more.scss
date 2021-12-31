@@ -1,0 +1,40 @@
+.show-more {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid $grey-200;
+  padding: 24px 0 24px;
+  text-align: center;
+  background-image: url("../../img/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 25px;
+}
+
+.show-more__content-wrapper {
+  padding-top: 53px;
+}
+
+.show-more__title {
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.show-more__description {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-500;
+}
+
+.show-more__button {
+  width: 100%;
+}

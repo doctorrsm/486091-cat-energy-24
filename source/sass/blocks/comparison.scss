@@ -1,0 +1,82 @@
+.comparison {
+  @media (min-width: $screen-tablet) {
+    padding: 0 58px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding: 0;
+  }
+}
+
+.comparison__image-wrapper {
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-tablet) {
+    position: relative;
+    margin-top: 32px;
+    height: 511px;
+
+    overflow: hidden;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 0;
+  }
+
+}
+
+.comparison__image {
+  @media (max-width: $screen-mobile) {
+    display: none;
+  }
+
+  @media (min-width: $screen-tablet) {
+    max-width: initial;
+    height: 100%;
+    width: auto;
+
+  }
+}
+
+.comparison__image--phone-visible {
+  @media (max-width: $screen-mobile) {
+    display: block;
+  }
+}
+
+.comparison__image-before-wrapper {
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+  }
+}
+
+.comparison__image--before {
+  @media (min-width: $screen-tablet) {
+    display: block;
+  }
+}
+
+.comparison__image-after-wrapper {
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.comparison__image--after {
+  @media (min-width: $screen-tablet) {
+    position: relative;
+  }
+}
+
+.comparison__switcher-area {}
