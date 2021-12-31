@@ -58,16 +58,16 @@ a {
 
 .overlay--catalog {
   background-image: url("../../img/catalog-mob.png");
-  height: 2135px;
+  height: 3517px;
 
   @media (min-width: $screen-tablet) {
     background-image: url("../img/catalog-tabl.png");
-    height: 2703px;
+    height: 4341px;
   }
 
   @media (min-width: $screen-desktop) {
     background-image: url("../img/catalog-desc.png");
-    height: 2155px;
+    height: 2533px;
   }
 }
 

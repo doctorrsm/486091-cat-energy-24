@@ -3,6 +3,11 @@
   display: flex;
   flex-wrap: wrap;
   padding: 19px 0 24px;
+
+  @media (min-width: $screen-tablet) {
+    border-top: none;
+    padding: 9px 0 39px;
+  }
 }
 
 .catalog-card__image-wrapper {
@@ -10,12 +15,27 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    min-height: 200px;
+  }
 }
 
-.catalog-card__image {}
+.catalog-card__image {
+  @media (min-width: $screen-tablet) {
+    width: auto;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+}
 
 .catalog-card__description {
   width: 50%;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+  }
 }
 
 .catalog-card__description-title {
@@ -30,29 +50,57 @@
   letter-spacing: 0em;
   text-transform: uppercase;
   padding-right: 50px;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding-right: 0;
+    margin: 0 auto;
+    width: 159px;
+  }
 }
 
 .catalog-card__description-list {
   padding: 15px 0px 22px;
   margin: 0;
+  @media (min-width: $screen-tablet) {
+    padding: 15px 39px 33px;
+  }
 }
 
 .catalog-card__description-item {
   display: flex;
   justify-content: space-between;
+  @media (min-width: $screen-tablet) {
+    border-bottom: 1px solid $grey-300;
+    padding: 7px 0;
+  }
 }
 
 .catalog-card__description-name {
   font-size: 12px;
   line-height: 16px;
+  @media (min-width: $screen-tablet) {
+    font-size: 16px;
+  }
+
+
 }
 
 .catalog-card__description-value {
   margin-left: 0;
   font-size: 12px;
   line-height: 16px;
+  @media (min-width: $screen-tablet) {
+    font-size: 16px;
+  }
 }
 
 .catalog-card__button {
   width: 100%;
+  @media (min-width: $screen-tablet) {
+    width: 76%;
+    margin: 0 auto;
+  }
 }
