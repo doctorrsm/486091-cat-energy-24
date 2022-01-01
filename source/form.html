@@ -63,10 +63,17 @@
 
 
         <a class="navbar__logo logo" href="index.html">
-          <img class="logo__icon" src="img/logo-icon.svg" width="33" height="38"
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-icon-tablet.svg" >
+            <img class="navbar__logo-icon" src="img/logo-icon.svg" width="33" height="38"
             alt=" Графический логотип магазина Cat ENERGY.">
-          <img class="logo__shop-name" src="img/logo-shop-name.svg" width="101" height="18"
-            alt="Текстовый логотип магазина Cat ENERGY.">
+          </picture>
+
+
+          <svg class="navbar__logo-shop-name" width="101" height="18" fill="none" role="img"
+            aria-label="Текстовый логотип магазина Cat ENERGY.">
+            <use xlink:href="#navbar__logo-shop-name"></use>
+          </svg>
         </a>
 
         <ul class="navbar__main-nav main-nav main-nav__list">

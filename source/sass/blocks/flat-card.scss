@@ -11,6 +11,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $screen-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 244px;
+    padding: 14px 0px 17px;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+  }
+
 }
 
 .flat-card:last-of-type {
@@ -33,22 +43,35 @@
     line-height: 20px;
     margin-bottom: 24px;
   }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .flat-card__description-list {
   margin: 0;
   margin-bottom: 15px;
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .flat-card__description-item {
   display: flex;
   justify-content: space-between;
+
   @media (min-width: $screen-tablet) {
     display: grid;
     grid-template-columns: auto minmax(92px, auto);
     padding-top: 3px;
     text-align: right;
-    }
+  }
+
+  @media (min-width: $screen-desktop) {
+    grid-template-columns: auto minmax(82px, auto);
+  }
 }
 
 .flat-card__description-name {
@@ -75,6 +98,10 @@
   @media (min-width: $screen-tablet) {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    text-align: left;
   }
 }
 

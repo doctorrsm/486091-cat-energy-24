@@ -4,6 +4,11 @@
   @media (min-width: $screen-tablet) {
     padding: 68px 0px 76px;
   }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 77px;
+    padding-bottom: 85px;
+  }
 }
 
 .additional-products__title {
@@ -23,6 +28,17 @@
     margin-bottom: 81px;
     padding-left: 37px;
   }
+  @media (min-width: $screen-desktop) {
+  padding-left: 0;
+  }
+}
+
+.additional-products__grid {
+  @media (min-width: $screen-desktop) {
+  display: grid;
+  grid-template-columns:  1fr 245px;
+  column-gap: 79px;
+  }
 }
 
 .additional-products__list {
@@ -36,5 +52,9 @@
 
   @media (min-width: $screen-tablet) {
     margin-top: 68px;
+  }
+
+  @media (min-width: $screen-desktop) {
+  margin-top: 0;
   }
 }

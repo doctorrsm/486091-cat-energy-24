@@ -6,11 +6,21 @@
   background-image: url("../../img/icons/plus.svg");
   background-repeat: no-repeat;
   background-position: 50% 25px;
+
   @media (min-width: $screen-tablet) {
-    padding-top: 81px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 36px;
     background-size: 60px;
     background-image: url("../../img/icons/plus-tablet.svg");
     background-position: 50% 134px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    border: none;
+    padding-top: 85px;
+    padding-bottom: 0;
   }
 }
 
@@ -18,7 +28,14 @@
   padding-top: 53px;
 
   @media (min-width: $screen-tablet) {
-    padding: 163px 73px 28px;
+    margin-top: auto;
+    padding: 159px 73px 28px;
+    border: 2px solid $grey-100;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 0;
+    padding: 159px 36px 37px;
   }
 }
 
@@ -58,8 +75,8 @@
 
 .show-more__button {
   width: 100%;
+
   @media (min-width: $screen-tablet) {
-    width: 76%;
-    margin: 37px auto 0;
+    margin: 86px auto 0;
   }
 }
