@@ -1,7 +1,7 @@
 .special-offer {
   display: flex;
   flex-direction: column-reverse;
-  height: 290px;
+  min-height: 290px;
   padding-bottom: 43px;
   color: #ffffff;
   background-color: $basic;
@@ -15,8 +15,26 @@
     background-image: url("../img/backgrounds/gift-backgroud@2x.jpg");
   }
 
+  @media (min-width: $screen-tablet) {
+    min-height: 200px;
+    display: block;
+    padding: 73px 90px 67px;
+    background-image: url("../img/backgrounds/gift-backgroud-tablet.jpg");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/gift-backgroud-tablet@2x.jpg");
+    }
+  }
 
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    padding: 73px 0px 43px;
+    background-image: url("../img/backgrounds/gift-backgroud.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/gift-backgroud@2x.jpg");
+    }
+  }
 }
 
 .special-offer:before {
@@ -40,6 +58,17 @@
   top: 59px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $screen-tablet) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 79px;
+  }
+  @media (min-width: $screen-desktop) {
+    top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+  }
 }
 
 .special-offer__icon {}
@@ -53,4 +82,15 @@
   margin: 0 auto;
   position: relative;
   z-index: 1;
+
+  @media (min-width: $screen-tablet) {
+    width: 195px;
+    margin: 0 0 0 auto;
+    text-align: left;
+  }
+
+  @media (min-width: $screen-desktop) {
+  text-align: center;
+  margin: 0 auto;
+  }
 }

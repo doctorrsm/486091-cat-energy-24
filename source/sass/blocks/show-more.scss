@@ -6,10 +6,37 @@
   background-image: url("../../img/icons/plus.svg");
   background-repeat: no-repeat;
   background-position: 50% 25px;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 36px;
+    background-size: 60px;
+    background-image: url("../../img/icons/plus-tablet.svg");
+    background-position: 50% 134px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    border: none;
+    padding-top: 85px;
+    padding-bottom: 0;
+  }
 }
 
 .show-more__content-wrapper {
   padding-top: 53px;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: auto;
+    padding: 159px 73px 28px;
+    border: 2px solid $grey-100;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 0;
+    padding: 159px 36px 37px;
+  }
 }
 
 .show-more__title {
@@ -23,6 +50,12 @@
   color: #111111;
   margin-top: 0;
   margin-bottom: 8px;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
 }
 
 .show-more__description {
@@ -33,8 +66,17 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey-500;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .show-more__button {
   width: 100%;
+
+  @media (min-width: $screen-tablet) {
+    margin: 86px auto 0;
+  }
 }

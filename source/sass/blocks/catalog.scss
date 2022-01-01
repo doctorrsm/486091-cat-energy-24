@@ -1,6 +1,6 @@
 .catalog {}
 .catalog * {
-  outline: 1px solid green;
+  //outline: 1px solid green;
 }
 .catalog__list {
   @include list-reset;
@@ -8,6 +8,10 @@
   @media (min-width: $screen-tablet) {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+  }
+  @media (min-width: $screen-desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px 80px;
   }
 }
 
