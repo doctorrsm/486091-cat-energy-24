@@ -1,5 +1,9 @@
 .additional-products {
   padding: 25px 0 35px;
+
+  @media (min-width: $screen-tablet) {
+    padding: 68px 0px 76px;
+  }
 }
 
 .additional-products__title {
@@ -12,6 +16,13 @@
   color: #000000;
   margin-top: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 81px;
+    padding-left: 37px;
+  }
 }
 
 .additional-products__list {
@@ -22,4 +33,8 @@
 
 .additional-products__special-offer {
   margin-top: 31px;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 68px;
+  }
 }
