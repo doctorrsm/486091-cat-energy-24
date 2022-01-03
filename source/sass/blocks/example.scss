@@ -21,8 +21,8 @@
 .example__grid {
   @media (min-width: $screen-desktop) {
     display: grid;
-    column-gap: 80px;
-    grid-template-columns: 1fr 1fr;
+    column-gap: 59px;
+    grid-template-columns: 1fr 591px;
   }
 }
 .example__content-wrapper {
