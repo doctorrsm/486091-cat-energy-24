@@ -12,9 +12,10 @@
 .contacts__map {
   display: block;
   border: none;
+  width: 100%;
   height: 362px;
   @media (min-width: $screen-tablet) {
-    width: 100%;
+
     height: 400px;
   }
 }
@@ -23,7 +24,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  @media (min-width: $screen-tablet) {}
+
+  @media (min-width: $screen-tablet) {
+    padding: 0 40px;
+  }
 
   @media (min-width: $screen-desktop) {
     position: absolute;
@@ -38,10 +42,10 @@
 .contacts__address-wrapper {
 
   padding: 26px 0;
-
+  background-color: $grey-100;
 
   @media (min-width: $screen-tablet) {
-    padding: 60px 40px 60px;
+    padding: 59px 0 62px
   }
 
   @media (min-width: $screen-desktop) {
@@ -77,6 +81,10 @@
 
   @media (min-width: $screen-tablet) and (max-width: ($screen-desktop - 1px)) {
     text-align: right;
+    margin-top: -4px;
+  }
+  @media (min-width: $screen-desktop) {
+  margin-top: -3px;
   }
 
 }
@@ -84,6 +92,6 @@
 .contacts__city-name {
   @media (min-width: $screen-tablet) {
   display: inline-block;
-  margin-top: 14px;
+  margin-top: 20px;
   }
 }

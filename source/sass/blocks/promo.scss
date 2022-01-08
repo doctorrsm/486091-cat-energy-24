@@ -118,16 +118,16 @@
   background-image: url("../../img/icons/cat-pro.svg");
 
   @media (min-width: $screen-tablet) {
-    background-size: 268px 200px;
+    background-size: 268px;
     left: auto;
-    top: 71px;
-    right: 22px;
+    top: 116px;
+    right: 26px;
   }
 
   @media (min-width: $screen-desktop) {
-    background-size: 134px 100px;
+    background-size: 134px;
     right: 0;
-    top: 24px;
+    top: 46px;
     left: 22px;
 
   }

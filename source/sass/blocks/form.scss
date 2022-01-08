@@ -1,12 +1,14 @@
 .form {
+  padding-bottom: 18px;
   @media (min-width: $screen-tablet) {
-    padding: 0 39px;
+    padding: 0 39px 72px;
   }
 
   @media (min-width: $screen-desktop) {
     padding: 0;
     padding-bottom: 83px;
   }
+
 }
 
 .form__caption {
@@ -32,12 +34,38 @@
   }
 }
 
+
 .form__group {
   margin: 0;
   padding: 0;
   border: none;
   outline: none;
+  position: relative;
+}
 
+.form__group-name-text {
+  position: relative;
+  display: inline-block;
+  outline: 22px solid #ffffff;
+  background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 200vw;
+    background-color: $basic;
+    left: -50vw;
+    top: 15px;
+    z-index: -1;
+    @media (min-width: $screen-tablet) {
+  top: 21px
+    }
+  }
+  @media (min-width: $screen-tablet) {
+outline: 40px solid #ffffff;
+  }
 }
 
 .form__about-cat-input-wrapper {
@@ -47,7 +75,7 @@
 
   @media (min-width: $screen-tablet) {
     row-gap: 72px;
-    padding: 66px 0 74px;
+    padding: 65px 0 74px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -59,14 +87,16 @@
 }
 
 .form__group-name {
-  font-family: $font-family-secondary;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0px;
   font-style: normal;
-  font-weight: 400;
+  font-family: $font-family-secondary;
   font-size: 24px;
   line-height: 26px;
-  text-align: left;
+  font-weight: 400;
   color: #000000;
-  margin-bottom: 0px;
+  text-align: left;
 
   @media (min-width: $screen-tablet) {
     font-size: 36px;
@@ -166,7 +196,9 @@
   }
 }
 
-.form__button {}
+.form__button {
+  width: 100%;
+}
 
 .form__submit-wrapper {
   @media (min-width: $screen-tablet) {

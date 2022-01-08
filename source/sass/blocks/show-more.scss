@@ -11,16 +11,17 @@
     display: flex;
     flex-direction: column;
     padding-top: 0px;
-    padding-bottom: 36px;
+    padding-bottom: 0px;
     background-size: 60px;
     background-image: url("../../img/icons/plus-tablet.svg");
     background-position: 50% 134px;
+    border: none;
   }
 
   @media (min-width: $screen-desktop) {
     border: none;
-    padding-top: 85px;
     padding-bottom: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -29,13 +30,13 @@
 
   @media (min-width: $screen-tablet) {
     margin-top: auto;
-    padding: 159px 73px 28px;
+    padding: 159px 36px 36px;
     border: 2px solid $grey-100;
   }
 
   @media (min-width: $screen-desktop) {
     margin-top: 0;
-    padding: 159px 36px 37px;
+    padding: 160px 36px 37px;
   }
 }
 
@@ -55,6 +56,10 @@
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 23px;
+    padding: 0 35px;
+  }
+  @media (min-width: $screen-desktop) {
+ padding: 0;
   }
 }
 
@@ -70,6 +75,10 @@
   @media (min-width: $screen-tablet) {
     font-size: 16px;
     line-height: 18px;
+    padding: 0 10px;
+  }
+  @media (min-width: $screen-desktop) {
+ padding: 0;
   }
 }
 

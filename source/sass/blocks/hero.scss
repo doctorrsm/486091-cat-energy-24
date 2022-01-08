@@ -1,13 +1,6 @@
 .hero {
   padding-top: 27px;
   color: #ffffff;
-  //background-color: $basic;
-  /*
-  background-image: url(../img/backgrounds/index-background-overlay.jpg);
-  background-color: $basic;
-  background-size: contain;
-  background-repeat: no-repeat;
-  */
   text-align: center;
 
   @media (min-width: $screen-tablet) {
@@ -145,7 +138,7 @@
   }
 }
 
-.hero_product-image-wrapper {
+.hero__product-image-wrapper {
   margin: 0;
   margin-bottom: 3px;
 

@@ -1,9 +1,10 @@
 .checkbox {
 
-  cursor: pointer;
+
 
   &:hover {
-    cursor: pointer;
+
+
     &::before {
       border-color: #bababa;
     }
@@ -18,15 +19,18 @@
   }
 
   &:active {
-    opacity: 0.3;
+
     outline: none;
   }
+
+
 
 }
 
 .checkbox__label {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .checkbox__label::before {
@@ -47,8 +51,17 @@
   }
 }
 
-.checkbox__input:checked ~ .checkbox__label::before {
+.checkbox__input:checked ~.checkbox__label::before {
   background-image: url("../../img/icons/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.checkbox__input:disabled  ~  .checkbox__label {
+     opacity: 0.3;
+    pointer-events: none;
+ }
+
+ .checkbox__input:not(:disabled) ~  .checkbox__label:active {
+   opacity: 0.3;
+ }
