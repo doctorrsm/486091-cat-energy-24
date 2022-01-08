@@ -1,4 +1,6 @@
 .page-main {
+  overflow-x: hidden;
+  position: relative;
 
   @media (max-width: $screen-mobile) {
     border-top: 1px solid #d9d9d9;

@@ -28,13 +28,27 @@
   }
 
   &:hover {
-    .social-icon {
+    .social-icon--vkontakte {
+      fill: $basic;
+    }
+    .social-icon--instagram {
+      fill: $basic;
+    }
+    .social-icon--facebook {
       stroke: $basic;
     }
   }
 
   &:active {
-    .social-icon {
+    .social-icon--vkontakte {
+      fill: $basic;
+      opacity: 0.3;
+    }
+    .social-icon--instagram {
+      fill: $basic;
+      opacity: 0.3;
+    }
+    .social-icon--facebook {
       stroke: $basic;
       opacity: 0.3;
     }

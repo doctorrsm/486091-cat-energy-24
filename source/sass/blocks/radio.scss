@@ -1,13 +1,11 @@
 .radio {
   color: $grey-600;
 
-
   &:hover {
     .radio__label::before {
       border-color: #bababa;
     }
   }
-
 
   &:focus {
     outline: 1px solid;
@@ -18,20 +16,22 @@
     outline-offset: 10px;
   }
 
-  &:active {
+  &:active  .radio__label:not(:disabled){
     opacity: 0.3;
   }
 
-
-
 }
-
-
-
 .radio__input {
   &:checked~ {
     .radio__label::after {
       display: inline-flex;
+    }
+  }
+
+  &:disabled ~ {
+    .radio__label {
+      opacity: 0.3;
+      pointer-events: none;
     }
   }
 }
