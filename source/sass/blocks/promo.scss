@@ -111,9 +111,9 @@
 }
 
 .promo__item--icon-pro::after {
-  top: 3px;
+  top: 14px;
   left: 2px;
-  background-size: 67px 50px;
+  background-size: 67px;
   background-image: url("../../img/icons/cat-pro.svg");
 
   @media (min-width: $screen-tablet) {
