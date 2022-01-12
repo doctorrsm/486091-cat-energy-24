@@ -118,8 +118,16 @@
   }
 }
 
-.catalog-card__button {
+.catalog-card__link {
   width: 100%;
+
+  &:focus {
+    outline: 2px solid $grey-600;
+  }
+
+  &:active {
+    outline: none;
+  }
 
   @media (min-width: $screen-tablet) {
     width: 76%;
