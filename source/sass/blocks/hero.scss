@@ -158,6 +158,9 @@
 }
 
 .hero__action-button {
+  font-size: 14px;
+  line-height: 18px;
+
   @media (max-width: $screen-mobile) {
     width: 100%;
   }
