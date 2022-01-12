@@ -8,7 +8,6 @@
     padding: 43px 0 55px;
     background: linear-gradient(to top, #eaeaea 0%, #eaeaea 43%, #ffffff 43%, #ffffff 100%);
     height: auto;
-
   }
 
   @media (min-width: $screen-desktop) {
@@ -25,11 +24,13 @@
     grid-template-columns: 1fr 591px;
   }
 }
+
 .example__content-wrapper {
   @media (min-width: $screen-desktop) {
-  padding-top: 44px;
+    padding-top: 44px;
   }
 }
+
 .example__title {
   margin-top: 0;
   margin-bottom: 40px;
@@ -66,8 +67,6 @@
   }
 }
 
-.example__stats-result {}
-
 .example__stats-wrapper {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -93,9 +92,4 @@
 
 .example__stats-result-plain {
   margin: 0;
-}
-
-.example__comparison {
-  @media (min-width: $screen-desktop) {
-  }
 }

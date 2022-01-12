@@ -1,15 +1,18 @@
 .copyright {
-  display: block;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 22px 0;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    transition: all 0.3s;
+
     .copyright__logo {
       fill: $basic;
     }
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -29,4 +32,5 @@
 
 .copyright__logo {
   fill: $grey-400;
+  transition: all 0.3s;
 }

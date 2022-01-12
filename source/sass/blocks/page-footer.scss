@@ -1,29 +1,35 @@
 .page-footer__grid {
   @media (min-width: $screen-tablet) {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
 }
+
 .page-footer__links {
   background-color: $grey-100;
+
   @media (min-width: $screen-tablet) {
-      padding: 29px 0;
+    padding: 29px 0;
   }
+
   @media (min-width: $screen-desktop) {
-    padding: 28px 0;
+    padding: 29px 0 30px;
+  }
 }
-}
+
 .page-footer__logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 39px 0 31px;
   cursor: pointer;
+
   &:not([href]) {
     cursor: default;
   }
+
   @media (min-width: $screen-tablet) {
     padding: 35px 0 31px;
   }
@@ -35,7 +41,7 @@
 
 .page-footer__contacts {
   @media (min-width: $screen-desktop) {
-  position: relative;
+    position: relative;
   }
 }
 

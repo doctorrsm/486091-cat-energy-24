@@ -12,47 +12,47 @@ img {
 
 a {
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 .overlay {
-display: none;
+  //display: none;
   position: absolute;
-  left: 0;
-  right: 0;
   top: 0;
-  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 1000;
   height: 2980px;
-  background-repeat: no-repeat;
-  background-image: url("../img/index-mobile.png");
-  background-position: center top;
+  width: 100%;
   pointer-events: none;
   opacity: 0.5;
-  z-index: 1000;
+  background-image: url("../img/index-mobile.png");
+  background-position: center top;
+  background-repeat: no-repeat;
 
   @media (min-width: $screen-tablet) {
-    background-image: url("../img/index-tabl.png");
     height: 4341px;
+    background-image: url("../img/index-tabl.png");
   }
 
   @media (min-width: $screen-desktop) {
-    background-image: url("../img/index-desc.png");
     height: 2809px;
+    background-image: url("../img/index-desc.png");
   }
-
 }
 
 .overlay--form {
-  background-image: url("../img/form-mob.png");
   height: 2135px;
+  background-image: url("../img/form-mob.png");
 
   @media (min-width: $screen-tablet) {
-    background-image: url("../img/form-tabl.png");
     height: 2703px;
+    background-image: url("../img/form-tabl.png");
   }
 
   @media (min-width: $screen-desktop) {
-    background-image: url("../img/form-desc.png");
     height: 2155px;
+    background-image: url("../img/form-desc.png");
   }
 }
 
@@ -71,18 +71,15 @@ display: none;
   }
 }
 
-.page {}
-
 body {
   margin: 0 auto;
+  font-style: normal;
   font-family: $font-family-primary;
   font-size: $font-size-base;
   line-height: $line-height-base;
   font-weight: 400;
-  font-style: normal;
   color: $grey-500;
 }
-
 
 .visually-hidden {
   position: absolute;

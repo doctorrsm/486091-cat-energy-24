@@ -15,14 +15,14 @@
     position: relative;
     margin-top: 32px;
     height: 511px;
-
     overflow: hidden;
+    top: 25px;
   }
 
   @media (min-width: $screen-desktop) {
+    top: initial;
     margin-top: 0;
   }
-
 }
 
 .comparison__image {
@@ -34,7 +34,6 @@
     max-width: initial;
     height: 100%;
     width: auto;
-
   }
 }
 
@@ -78,5 +77,3 @@
     position: relative;
   }
 }
-
-.comparison__switcher-area {}

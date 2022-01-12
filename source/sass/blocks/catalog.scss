@@ -1,19 +1,22 @@
-.catalog {}
-.catalog * {
-  //outline: 1px solid green;
+.catalog {
+  display: block;
 }
+
 .catalog__list {
   @include list-reset;
   display: grid;
+
   @media (min-width: $screen-tablet) {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
+
   @media (min-width: $screen-desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 60px 80px;
   }
 }
 
-.catalog__item {}
-
+.catalog__item {
+  padding-left: 1px;
+}

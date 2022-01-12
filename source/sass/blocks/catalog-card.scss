@@ -8,12 +8,11 @@
     border-top: none;
     padding: 9px 0 39px;
     background-image: linear-gradient(#ffffff 82px, $grey-100 82px 100%);
-    ;
   }
 
   @media (min-width: $screen-desktop) {
     padding-top: 5px;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
     background-image: linear-gradient(#ffffff 85px, $grey-100 85px 100%);
   }
 }
@@ -59,7 +58,7 @@
   line-height: 20px;
   font-weight: 400;
   color: $grey-600;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-transform: uppercase;
   padding-right: 50px;
 
@@ -71,20 +70,22 @@
     margin: 0 auto;
     width: 159px;
   }
+
   @media (min-width: $screen-desktop) {
-  line-height: 21px;
+    line-height: 21px;
   }
 }
 
 .catalog-card__description-list {
-  padding: 15px 0px 22px;
+  padding: 15px 0 22px;
   margin: 0;
 
   @media (min-width: $screen-tablet) {
     padding: 15px 39px 33px;
   }
+
   @media (min-width: $screen-desktop) {
-  padding-top: 19px;
+    padding: 18px 38px 33px 39px;
   }
 }
 
@@ -105,8 +106,6 @@
   @media (min-width: $screen-tablet) {
     font-size: 16px;
   }
-
-
 }
 
 .catalog-card__description-value {
@@ -126,7 +125,8 @@
     width: 76%;
     margin: 0 auto;
   }
+
   @media (min-width: $screen-desktop) {
-  width: 67%;
+    width: 67%;
   }
 }

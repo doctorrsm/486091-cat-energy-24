@@ -17,10 +17,12 @@
   border: none;
   text-align: center;
   min-height: 40px;
+  transition: all 0.3s;
 
-  &--submit{
+  &--submit {
     font-size: 16px;
     line-height: 20px;
+
     @media (min-width: $screen-tablet) {
       min-height: 52px;
       font-size: 20px;
@@ -31,21 +33,22 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $basic-dark;
   }
 
   &:active {
     color: #8ec36d;
   }
-
 }
 
 .button--light {
   background-color: $grey-100;
   color: $grey-500;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $grey-200;
   }
 

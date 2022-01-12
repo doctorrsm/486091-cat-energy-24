@@ -16,7 +16,7 @@
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100vw;
   height: 302px;
@@ -33,9 +33,6 @@
     background-image: url("../../img/backgrounds/hero-mobile@2x.jpg");
   }
 
-
-
-
   @media (min-width: $screen-tablet) and (max-width: ($screen-desktop - 1px)) {
     display: none;
   }
@@ -47,7 +44,6 @@
     background-size: cover;
     background-position: 100% 100%;
     background-color: inherit;
-
     background-image: url("../../img/backgrounds/hero-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -57,7 +53,7 @@
 }
 
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100vw;
   height: 302px;
@@ -90,7 +86,6 @@
     padding: 13px 80px;
     min-width: 460px;
   }
-
 }
 
 .hero__title {
@@ -116,7 +111,7 @@
 }
 
 .hero__slogan {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 29px;
   font-style: normal;
   font-family: $font-family-secondary;
@@ -163,7 +158,6 @@
 }
 
 .hero__action-button {
-
   @media (max-width: $screen-mobile) {
     width: 100%;
   }
@@ -174,7 +168,6 @@
     min-height: 54px;
     width: auto;
     margin-top: 27px;
-    margin-left: 4px;
     margin-left: 90px;
     padding-right: 26px;
     padding-left: 26px;

@@ -2,11 +2,11 @@
   padding: 25px 0 35px;
 
   @media (min-width: $screen-tablet) {
-    padding: 68px 0px 76px;
+    padding: 68px 0 76px;
   }
 
   @media (min-width: $screen-desktop) {
-    padding-top: 77px;
+    padding-top: 74px;
     padding-bottom: 85px;
   }
 }
@@ -17,7 +17,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   color: #000000;
   margin-top: 0;
   margin-bottom: 35px;
@@ -28,16 +28,17 @@
     margin-bottom: 81px;
     padding-left: 37px;
   }
+
   @media (min-width: $screen-desktop) {
-  padding-left: 0;
+    padding-left: 0;
   }
 }
 
 .additional-products__grid {
   @media (min-width: $screen-desktop) {
-  display: grid;
-  grid-template-columns:  1fr 245px;
-  column-gap: 79px;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 79px;
   }
 }
 
@@ -45,16 +46,14 @@
   @include list-reset;
 }
 
-.additional-products__item {}
-
 .additional-products__special-offer {
-  margin-top: 31px;
+  margin-top: 35px;
 
   @media (min-width: $screen-tablet) {
     margin-top: 68px;
   }
 
   @media (min-width: $screen-desktop) {
-  margin-top: 0;
+    margin-top: 0;
   }
 }

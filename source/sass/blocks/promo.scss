@@ -11,7 +11,6 @@
   }
 }
 
-
 .promo__list {
 
   display: grid;
@@ -46,7 +45,7 @@
 
 .promo__item--icon::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 50px;
   width: 50px;
   border-radius: 100%;
@@ -73,7 +72,7 @@
 
 .promo__item--icon::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 70px;
   width: 100px;
   background-repeat: no-repeat;
@@ -91,7 +90,7 @@
 }
 
 .promo__item--icon-slim::after {
-  top: 0px;
+  top: 0;
   left: 19px;
   background-size: 36px 50px;
   background-image: url("../../img/icons/cat-slim.svg");
@@ -129,7 +128,6 @@
     right: 0;
     top: 46px;
     left: 22px;
-
   }
 }
 
@@ -154,7 +152,6 @@
     letter-spacing: 0;
     text-align: left;
     margin-bottom: 25px;
-
   }
 
   @media (min-width: $screen-desktop) {
@@ -162,10 +159,6 @@
     margin-bottom: 74px;
   }
 }
-
-.promo__item-title--slim-icon {}
-
-.promo__item-title--pro-icon {}
 
 .promo__item-text {
   margin-top: 0;
@@ -223,7 +216,7 @@
 
 
 .promo__item-link::after {
-  content: '';
+  content: "";
   width: 32px;
   height: 10px;
   display: inline-flex;
@@ -236,5 +229,4 @@
   @media (min-width: $screen-tablet) {
     margin-left: 25px;
   }
-
 }
