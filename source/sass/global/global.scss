@@ -15,62 +15,6 @@ a {
   transition: all 0.3s;
 }
 
-.overlay {
-  //display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1000;
-  height: 2980px;
-  width: 100%;
-  pointer-events: none;
-  opacity: 0.5;
-  background-image: url("../img/index-mobile.png");
-  background-position: center top;
-  background-repeat: no-repeat;
-
-  @media (min-width: $screen-tablet) {
-    height: 4341px;
-    background-image: url("../img/index-tabl.png");
-  }
-
-  @media (min-width: $screen-desktop) {
-    height: 2809px;
-    background-image: url("../img/index-desc.png");
-  }
-}
-
-.overlay--form {
-  height: 2135px;
-  background-image: url("../img/form-mob.png");
-
-  @media (min-width: $screen-tablet) {
-    height: 2703px;
-    background-image: url("../img/form-tabl.png");
-  }
-
-  @media (min-width: $screen-desktop) {
-    height: 2155px;
-    background-image: url("../img/form-desc.png");
-  }
-}
-
-.overlay--catalog {
-  background-image: url("../../img/catalog-mob.png");
-  height: 3517px;
-
-  @media (min-width: $screen-tablet) {
-    background-image: url("../img/catalog-tabl.png");
-    height: 4341px;
-  }
-
-  @media (min-width: $screen-desktop) {
-    background-image: url("../img/catalog-desc.png");
-    height: 2533px;
-  }
-}
-
 body {
   margin: 0 auto;
   font-style: normal;
