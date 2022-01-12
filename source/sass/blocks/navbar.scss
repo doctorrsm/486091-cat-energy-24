@@ -14,7 +14,6 @@
     justify-content: space-between;
     padding: 53px 0 36px;
   }
-
 }
 
 .navbar__logo {
@@ -25,7 +24,6 @@
 }
 
 .navbar__logo-icon {
-
   @media (min-width: $screen-tablet) {
     position: static;
     transform: initial;
@@ -33,9 +31,10 @@
     height: 50px;
     margin-right: 13px;
   }
+
   @media (min-width: $screen-desktop) {
-  width: 71px;
-  height: 59px;
+    width: 71px;
+    height: 59px;
   }
 }
 
@@ -47,16 +46,16 @@
     transform: translate(-50%, -50%);
     fill: #111111;
   }
+
   @media (min-width: $screen-tablet) {
     fill: $grey-500;
   }
+
   @media (min-width: $screen-desktop) {
     width: 118px;
     height: 22px;
   }
 }
-
-
 
 .navbar__toggle {
   height: 18px;
@@ -72,7 +71,8 @@
     display: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -97,7 +97,7 @@
 .navbar__main-nav {
   z-index: 2;
 
-  @media(max-width: $screen-mobile) {
+  @media (max-width: $screen-mobile) {
     position: absolute;
     top: 66px;
     left: 0;
@@ -109,13 +109,16 @@
 .navbar--no-js {
   @media (max-width: $screen-mobile) {
     flex-wrap: wrap;
+
     .navbar__main-nav {
       display: block;
       position: static;
     }
+
     .navbar__toggle {
       display: none;
     }
+
     .navbar__logo-shop-name {
       top: 31px;
     }

@@ -37,7 +37,6 @@
 
   @media (max-width: $screen-mobile) {
     border-bottom: 1px solid #e6e6e6;
-
   }
 
   @media (min-width: $screen-tablet) {
@@ -55,27 +54,22 @@
     margin-left: 35px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
+
   &:focus-visible {
     outline: none;
   }
-  &:focus{
+
+  &:focus {
     outline: 1px solid;
   }
+
   &:active {
     opacity: 0.3;
     outline: none;
-  }
-
-}
-
-.main-nav--dark-bg {
-  @media (min-width: $screen-desktop) {
-    .main-nav__link {
-      color: #ffffff;
-    }
   }
 }
 
@@ -87,19 +81,26 @@
 
 .main-nav__link--current {
   cursor: default;
+
   @media (min-width: $screen-tablet) {
     border-bottom: 2px solid $basic;
   }
+
   &:hover {
     opacity: 1;
   }
-  &:active{
+
+  &:active {
     opacity: 1;
   }
 }
 
 .main-nav--dark-bg {
   @media (min-width: $screen-desktop) {
+    .main-nav__link {
+      color: #ffffff;
+    }
+
     .main-nav__link--current {
       border-color: #ffffff;
     }

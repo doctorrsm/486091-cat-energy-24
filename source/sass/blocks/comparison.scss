@@ -16,9 +16,11 @@
     margin-top: 32px;
     height: 511px;
     overflow: hidden;
+    top: 25px;
   }
 
   @media (min-width: $screen-desktop) {
+    top: initial;
     margin-top: 0;
   }
 }

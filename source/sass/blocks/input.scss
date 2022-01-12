@@ -3,6 +3,7 @@
   align-items: center;
   min-height: 45px;
   padding: 5px;
+  padding-left: 15px;
   font-family: $font-family-secondary;
   font-size: 16px;
   line-height: 18px;
@@ -78,6 +79,12 @@
 
 .input--number {
   appearance: textfield;
+  padding: 0;
+  text-indent: 16px;
+
+  @media (min-width: $screen-tablet) {
+    text-indent: 21px;
+  }
 }
 
 .form__input-icon {
