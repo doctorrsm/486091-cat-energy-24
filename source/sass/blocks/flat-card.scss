@@ -1,7 +1,7 @@
 .flat-card {
   border-top: 1px solid $grey-300;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 
   @media (min-width: $screen-tablet) {
     padding: 26px 37px 28px;
@@ -15,12 +15,11 @@
   @media (min-width: $screen-desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr 244px;
-    padding: 14px 0px 17px;
+    padding: 14px 0 17px;
     align-items: center;
     border-left: none;
     border-right: none;
   }
-
 }
 
 .flat-card:last-of-type {

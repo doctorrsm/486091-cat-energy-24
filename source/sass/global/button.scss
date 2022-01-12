@@ -17,10 +17,12 @@
   border: none;
   text-align: center;
   min-height: 40px;
+  transition: all 0.3s;
 
-  &--submit{
+  &--submit {
     font-size: 16px;
     line-height: 20px;
+
     @media (min-width: $screen-tablet) {
       min-height: 52px;
       font-size: 20px;
@@ -38,7 +40,6 @@
   &:active {
     color: #8ec36d;
   }
-
 }
 
 .button--light {

@@ -1,5 +1,3 @@
-.stats-result {}
-
 .stats-result-boxed {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,8 +45,9 @@
     line-height: 14px;
     background-color: #ffffff;
   }
+
   @media (min-width: $screen-desktop) {
- background-color: #eaeaea;
+    background-color: #eaeaea;
   }
 }
 
@@ -69,57 +68,3 @@
   }
 }
 
-.stats-result-plain {
-  padding-top: 20px;
-
-  @media (min-width: $screen-tablet) {
-    padding-top: 11px;
-  }
-}
-
-.stats-result-plain__item {
-  @media (min-width: $screen-tablet) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  @media (min-width: $screen-desktop) {
- flex-direction: row;
- align-items: baseline;
-  }
-}
-
-.stats-result-plain__description,
-.stats-result-plain__value {
-  display: inline;
-  font-style: normal;
-  font-family: $font-family-secondary;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-
-  @media (min-width: $screen-tablet) {
-    font-size: 20px;
-  }
-}
-
-.stats-result-plain__value {
-  margin-left: 0px;
-
-  @media (min-width: $screen-tablet) {
-    padding-right: 5px;
-  }
-  @media (min-width: $screen-desktop) {
-  margin-left: 64px;
-  }
-}
-
-.stats-result-plain__description {
-  @media (min-width: $screen-tablet) {
-    margin-bottom: 8px;
-  }
-
-}

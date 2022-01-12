@@ -18,8 +18,10 @@
     "gulp-terser": "2.1.0",
     "postcss": "8.3.11",
     "postcss-csso": "5.0.1",
+    "postcss-scss": "^4.0.3",
     "stylelint": "14.0.1",
-    "stylelint-config-htmlacademy": "^0.1.11"
+    "stylelint-config-htmlacademy": "^0.1.12",
+    "stylelint-config-standard-scss": "^3.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

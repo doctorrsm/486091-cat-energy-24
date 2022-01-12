@@ -28,7 +28,7 @@
 
   @media (min-width: $screen-desktop) {
     display: flex;
-    padding: 73px 0px 43px;
+    padding: 73px 0 43px;
     background-image: url("../img/backgrounds/gift-backgroud.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -37,8 +37,8 @@
   }
 }
 
-.special-offer:before {
-  content: '';
+.special-offer::before {
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -48,7 +48,7 @@
 }
 
 .special-offer::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 78px;
   height: 78px;
@@ -64,14 +64,13 @@
     transform: translateY(-50%);
     left: 79px;
   }
+
   @media (min-width: $screen-desktop) {
     top: 59px;
-  left: 50%;
-  transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
-
-.special-offer__icon {}
 
 .special-offer__text {
   font-style: normal;
@@ -90,7 +89,7 @@
   }
 
   @media (min-width: $screen-desktop) {
-  text-align: center;
-  margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
   }
 }

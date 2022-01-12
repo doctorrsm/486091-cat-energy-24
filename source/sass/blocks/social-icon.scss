@@ -1,8 +1,6 @@
 .social-icon {
-
+  transition: all 0.3s;
   fill: $grey-400;
-
-
 }
 
 .social-icon--vkontakte {
@@ -10,7 +8,6 @@
     width: 30px;
     height: 26px;
   }
-
 }
 
 .social-icon--instagram {
@@ -18,15 +15,14 @@
     width: 30px;
     height: 26px;
   }
-
 }
 
 .social-icon--facebook {
-  fill:none;
+  fill: none;
   stroke: $grey-400;
+
   @media (min-width: $screen-tablet) {
     width: 28px;
     height: 33px;
   }
-
 }

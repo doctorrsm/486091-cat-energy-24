@@ -11,16 +11,17 @@
     outline: 1px solid;
     outline-offset: 10px;
   }
+
   &:focus-within {
     outline: 1px solid;
     outline-offset: 10px;
   }
 
-  &:active  .radio__label:not(:disabled){
+  &:active .radio__label:not(:disabled) {
     opacity: 0.3;
   }
-
 }
+
 .radio__input {
   &:checked~ {
     .radio__label::after {
@@ -43,7 +44,6 @@
   grid-template-rows: 30px;
   grid-template-areas: "mark radio";
   cursor: pointer;
-  cursor: pointer;
   column-gap: 15px;
   grid-area: radio;
 
@@ -53,7 +53,7 @@
 
   &::before {
     display: inline-flex;
-    content: '';
+    content: "";
     height: 30px;
     width: 30px;
     border: 1px solid $grey-300;
@@ -70,7 +70,7 @@
 
   &::after {
     display: none;
-    content: '';
+    content: "";
     height: 13px;
     width: 13px;
     background-color: $basic;

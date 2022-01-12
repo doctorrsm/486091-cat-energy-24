@@ -1,5 +1,6 @@
 .form {
   padding-bottom: 18px;
+
   @media (min-width: $screen-tablet) {
     padding: 0 39px 72px;
   }
@@ -8,7 +9,6 @@
     padding: 0;
     padding-bottom: 83px;
   }
-
 }
 
 .form__caption {
@@ -45,26 +45,38 @@
 
 .form__group-name-text {
   position: relative;
-  display: inline-block;
-  outline: 22px solid #ffffff;
-  background-color: #ffffff;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: -23px;
+    z-index: -1;
+    display: block;
+    content: "";
+    height: 100%;
+    width: calc(100% + 46px);
+    background-color: #ffffff;
+
+    @media (min-width: $screen-tablet) {
+      left: -40px;
+      width: calc(100% + 80px);
+    }
+  }
 
   &::before {
     position: absolute;
-    content: '';
+    top: 21px;
+    left: -50vw;
+    z-index: -1;
     display: block;
+    content: "";
     height: 2px;
     width: 200vw;
     background-color: $basic;
-    left: -50vw;
-    top: 15px;
-    z-index: -1;
+
     @media (min-width: $screen-tablet) {
-  top: 21px
+      top:30px;
     }
-  }
-  @media (min-width: $screen-tablet) {
-outline: 40px solid #ffffff;
   }
 }
 
@@ -83,13 +95,12 @@ outline: 40px solid #ffffff;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
-
 }
 
 .form__group-name {
   position: relative;
   z-index: 1;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-style: normal;
   font-family: $font-family-secondary;
   font-size: 24px;
@@ -135,9 +146,7 @@ outline: 40px solid #ffffff;
 
 .form__input {
   flex-grow: 1;
-
 }
-
 
 .form__group-radio-wrapper {
   display: grid;
@@ -153,12 +162,7 @@ outline: 40px solid #ffffff;
     padding: 31px 34px 31px;
     row-gap: 22px;
   }
-
 }
-
-.form__radio {}
-
-.form__element-email {}
 
 .form__textarea-wrapper {
   padding: 38px 0 19px;
@@ -171,11 +175,6 @@ outline: 40px solid #ffffff;
     padding: 75px 0 64px;
   }
 }
-
-
-.form__textarea {}
-
-.form__checkbox {}
 
 .form__group-checkbox-wrapper {
   display: grid;

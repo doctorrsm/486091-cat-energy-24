@@ -1,7 +1,7 @@
 .socials {
   padding: 5px 0;
 
-  @media (max-width:$screen-mobile) {
+  @media (max-width: $screen-mobile) {
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
   }
@@ -14,8 +14,6 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
-.socials__item {}
 
 .socials__link {
   display: inline-flex;
@@ -31,9 +29,11 @@
     .social-icon--vkontakte {
       fill: $basic;
     }
+
     .social-icon--instagram {
       fill: $basic;
     }
+
     .social-icon--facebook {
       stroke: $basic;
     }
@@ -44,10 +44,12 @@
       fill: $basic;
       opacity: 0.3;
     }
+
     .social-icon--instagram {
       fill: $basic;
       opacity: 0.3;
     }
+
     .social-icon--facebook {
       stroke: $basic;
       opacity: 0.3;

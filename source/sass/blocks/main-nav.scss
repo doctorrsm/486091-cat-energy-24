@@ -2,6 +2,7 @@
   display: none;
   background-color: #ffffff;
   text-align: center;
+
   @include list-reset;
 
   @media (max-width: $screen-mobile) {
@@ -20,11 +21,7 @@
   @media (max-width: $screen-mobile) {
     display: block;
   }
-
 }
-
-
-.main-nav__item {}
 
 .main-nav__link {
   display: block;
