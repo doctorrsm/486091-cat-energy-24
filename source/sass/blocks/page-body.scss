@@ -1,7 +1,14 @@
 .page-body {
-  min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  margin: 0 auto;
+  font-style: normal;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: 400;
+  color: $grey-500;
 }
 
 .page-body__page-header {

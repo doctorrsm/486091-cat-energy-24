@@ -15,16 +15,6 @@ a {
   transition: all 0.3s;
 }
 
-body {
-  margin: 0 auto;
-  font-style: normal;
-  font-family: $font-family-primary;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  font-weight: 400;
-  color: $grey-500;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;

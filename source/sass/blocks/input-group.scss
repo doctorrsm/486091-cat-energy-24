@@ -10,14 +10,6 @@
 .input-group--contacts {
   padding: 35px 0 24px;
 
-  .form__element-name {
-    margin-right: 10px;
-
-    @media (min-width: $screen-tablet) {
-      margin-right: 18px;
-    }
-  }
-
   @media (min-width: $screen-tablet) {
     padding: 76px 0 65px;
   }
