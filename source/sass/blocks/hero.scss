@@ -38,10 +38,12 @@
   }
 
   @media (min-width: $screen-desktop) {
+    top: auto;
+    bottom: 0;
     left: auto;
     width: 50vw;
-    height: 100%;
-    background-size: cover;
+    height: 200%;
+    background-size: contain;
     background-position: 100% 100%;
     background-color: inherit;
     background-image: url("../../img/backgrounds/hero-desktop.jpg");
@@ -67,10 +69,12 @@
   }
 
   @media (min-width: $screen-desktop) {
+    top: auto;
+    bottom: 0;
     right: 0;
     left: auto;
     width: 50vw;
-    height: 100%;
+    height: 200%;
   }
 }
 

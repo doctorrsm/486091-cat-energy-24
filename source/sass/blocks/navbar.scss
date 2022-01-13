@@ -20,6 +20,8 @@
   @media (min-width: $screen-tablet) {
     display: flex;
     align-items: center;
+    align-self: flex-start;
+    min-width: 174px;
   }
 }
 

@@ -50,5 +50,6 @@
 .page-main--under-header-position {
   @media (min-width: $screen-desktop) {
     margin-top: -165px;
+    overflow: initial;
   }
 }
