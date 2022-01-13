@@ -17,11 +17,15 @@
   }
 }
 
-.catalog-card__image-wrapper {
+.catalog-card__image-link {
   width: 50%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  &:focus {
+    outline: 2px solid $grey-600;
+  }
 
   @media (min-width: $screen-tablet) {
     display: flex;
@@ -44,6 +48,21 @@
 
   @media (min-width: $screen-desktop) {
     height: 196px;
+  }
+}
+
+.catalog-card__title-link:focus-visible {
+  &:focus {
+    outline: 2px solid $grey-600;
+    border: none;
+  }
+}
+
+.catalog-card__title-link {
+  display: block;
+
+  &:focus {
+    outline: 2px solid $grey-600;
   }
 }
 

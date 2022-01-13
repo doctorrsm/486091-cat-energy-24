@@ -87,6 +87,14 @@
 .show-more__button {
   width: 100%;
 
+  &:focus {
+    outline: 1px solid $grey-600;
+  }
+
+  &:active {
+    outline: none;
+  }
+
   @media (min-width: $screen-tablet) {
     margin: 86px auto 0;
   }
