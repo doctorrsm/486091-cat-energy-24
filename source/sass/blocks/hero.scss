@@ -4,9 +4,9 @@
   text-align: center;
 
   @media (min-width: $screen-tablet) {
-    text-align: left;
     padding-top: 34px;
     padding-bottom: 527px;
+    text-align: left;
   }
 
   @media (min-width: $screen-desktop) {
@@ -16,18 +16,18 @@
 }
 
 .hero::before {
-  content: "";
   position: absolute;
-  width: 100vw;
-  height: 302px;
-  left: 0;
   top: 0;
   right: 0;
-  background-color: $basic;
+  left: 0;
+  content: "";
+  height: 302px;
+  width: 100vw;
   background-image: url("../../img/backgrounds/hero-mobile.jpg");
+  background-color: $basic;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/backgrounds/hero-mobile@2x.jpg");
@@ -41,12 +41,12 @@
     top: auto;
     bottom: 0;
     left: auto;
-    width: 50vw;
     height: 200%;
-    background-size: contain;
-    background-position: 100% 100%;
-    background-color: inherit;
+    width: 50vw;
     background-image: url("../../img/backgrounds/hero-desktop.jpg");
+    background-color: inherit;
+    background-position: 100% 100%;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/backgrounds/hero-desktop@2x.jpg");
@@ -55,13 +55,13 @@
 }
 
 .hero::after {
-  content: "";
   position: absolute;
-  width: 100vw;
-  height: 302px;
-  left: 0;
   top: 0;
   right: 0;
+  left: 0;
+  content: "";
+  height: 302px;
+  width: 100vw;
   background-color: rgba(104, 183, 56, 0.85);
 
   @media (min-width: $screen-tablet) and (max-width: ($screen-desktop - 1px)) {
@@ -70,11 +70,11 @@
 
   @media (min-width: $screen-desktop) {
     top: auto;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     left: auto;
-    width: 50vw;
     height: 200%;
+    width: 50vw;
   }
 }
 

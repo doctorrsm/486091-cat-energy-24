@@ -21,16 +21,12 @@
         <a class="navbar__logo logo" href="index.html">
           <picture>
             <source media="(min-width: 768px)" srcset="img/icons/logo-icon-tablet.svg" />
-            <img class="navbar__logo-icon" src="img/icons/logo-icon.svg" width="33" height="38"
-              alt=" Графический логотип магазина Cat ENERGY." />
+            <img class="navbar__logo-icon" src="img/icons/logo-icon.svg" width="33" height="38" alt=" Графический логотип магазина Cat ENERGY." />
           </picture>
-
-          <svg class="navbar__logo-shop-name" width="101" height="18" viewBox="0 0 101 18" fill="none" role="img"
-            aria-label="Текстовый логотип магазина Cat ENERGY.">
+          <svg class="navbar__logo-shop-name" width="101" height="18" viewbox="0 0 101 18" fill="none" role="img" aria-label="Текстовый логотип магазина Cat ENERGY.">
             <use xlink:href="img/sprite.svg#logo-shop-name"></use>
           </svg>
         </a>
-
         <ul class="navbar__main-nav main-nav">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -50,136 +46,92 @@
   </header>
   <main class="page-main">
     <div class="container">
-      <h1 class=page-main__main-title>Подбор программы</h1>
+      <h1 class="page-main__main-title">Подбор программы</h1>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="form__caption">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <!-- Данные кота -->
         <div class="form__about-cat-input-wrapper">
           <fieldset class="form__group input-group">
-            <legend class="form__group-name visually-hidden">Заполните данные вашего кота.</legend>
-            <label class="form__element">
+            <legend class="form__group-name visually-hidden">Заполните данные вашего кота.</legend><label class="form__element">
               <span class="form__element-name">Имя:*</span>
               <input class="form__input" type="text" name="pet-name" value="Барсик" required>
-            </label>
-            <label class="form__element">
+            </label><label class="form__element">
               <span class="form__element-name">Вес (кг):*</span>
               <input class="form__input form__input--number" type="number" name="pet-weight" value="7" required>
-            </label>
-            <label class="form__element">
+            </label><label class="form__element">
               <span class="form__element-name">Возраст&#160;(лет):</span>
               <input class="form__input form__input--number" type="number" name="pet-age" value="7">
             </label>
           </fieldset>
-          <!-- Цель программы -->
           <fieldset class="form__group form__group-radio-wrapper">
             <legend class="form__group-name visually-hidden">Выберите цель программы.</legend>
             <p class="form__element radio">
-              <!-- Убраь блок радио и сделать его элементом-->
-              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-loss"
-                name="program-goal" value="weight loss" required checked>
-              <label class="form__element-name radio__label" for="program-goal-loss">Похудение</label>
-            </p>
+              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-loss" name="program-goal" value="weight loss" required checked><label class="form__element-name radio__label" for="program-goal-loss">Похудение</label></p>
             <p class="form__element radio">
-              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-gain"
-                name="program-goal" value="weight gain" required>
-              <label class="form__element-name radio__label" for="program-goal-gain">Набор массы</label>
-            </p>
+              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-gain" name="program-goal" value="weight gain" required><label class="form__element-name radio__label" for="program-goal-gain">Набор массы</label></p>
             <p class="form__element radio">
-              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-undefenite"
-                name="program-goal" value="need advice" required>
-              <label class="form__element-name radio__label" for="program-goal-undefenite">Не знаю (Нужен ваш
-                совет)</label>
-            </p>
+              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-undefenite" name="program-goal" value="need advice" required><label class="form__element-name radio__label" for="program-goal-undefenite">Не знаю (Нужен ваш совет)</label></p>
           </fieldset>
         </div>
-
-        <!-- Данные Владельца -->
         <fieldset class="form__group">
           <legend class="form__group-name">
             <span class="form__group-name-text">Контактные данные (владельца кота)</span>
           </legend>
-          <div class="input-group input-group--contacts">
-            <label class="form__element">
+          <div class="input-group input-group--contacts"><label class="form__element">
               <span class="form__element-name">E-mail:*</span>
-              <input class="form__input input form__input--mail" type="email" name="customer-name" value="kuklachev@gmail.com"
-                required>
-              <svg class="form__input-icon" fill="none" width="20" height="15" viewBox="0 0 20 15">
+              <input class="form__input input form__input--mail" type="email" name="customer-name" value="kuklachev@gmail.com" required>
+              <svg class="form__input-icon" fill="none" width="20" height="15" viewbox="0 0 20 15">
                 <use xlink:href="img/sprite.svg#icon-email"></use>
               </svg>
-            </label>
-            <label class="form__element">
+            </label><label class="form__element">
               <span class="form__element-name">Телефон:*</span>
-              <input class="form__input form__input--phone" type="tel" name="customer-phone" value="8 (960) 900-60-90"
-                required>
-              <svg class="form__input-icon form__input-icon--phone" fill="none" width="20" height="21"
-                viewBox="0 0 20 21">
+              <input class="form__input form__input--phone" type="tel" name="customer-phone" value="8 (960) 900-60-90" required>
+              <svg class="form__input-icon form__input-icon--phone" fill="none" width="20" height="21" viewbox="0 0 20 21">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
-            </label>
-          </div>
+            </label></div>
         </fieldset>
-        <!-- Комментарий покупателя -->
         <fieldset class="form__group">
           <legend class="form__group-name">
             <span class="form__group-name-text">Комментарий</span>
           </legend>
           <div class="form__textarea-wrapper">
-            <textarea class="form__textarea textarea" name="customer-commentary"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__textarea textarea" name="customer-commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <!-- Дополнительные опции -->
         <fieldset class="form__group">
           <legend class="form__group-name">
             <span class="form__group-name-text">Дополнительно</span>
           </legend>
           <div class="form__group-checkbox-wrapper">
-            <p class="form__element  checkbox">
-              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="sweetener"
-                name="sweetener" checked>
-              <label class="form__element-name checkbox__label" for="sweetener">Cахарозаменитель</label>
-            </p>
-            <p class="form__element  checkbox">
-              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="drinking-water"
-                name="drinking-water">
-              <label class="form__element-name checkbox__label" for="drinking-water">Питьевая вода</label>
-            </p>
-            <p class="form__element  checkbox">
-              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="milk" name="milk">
-              <label class="form__element-name checkbox__label" for="milk">Молоко</label>
-            </p>
-            <p class="form__element  checkbox">
-              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="vitamins"
-                name="vitamins">
-              <label class="form__element-name checkbox__label" for="vitamins">Витамины</label>
-            </p>
+            <p class="form__element checkbox">
+              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked><label class="form__element-name checkbox__label" for="sweetener">Cахарозаменитель</label></p>
+            <p class="form__element checkbox">
+              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="drinking-water" name="drinking-water"><label class="form__element-name checkbox__label" for="drinking-water">Питьевая вода</label></p>
+            <p class="form__element checkbox">
+              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="milk" name="milk"><label class="form__element-name checkbox__label" for="milk">Молоко</label></p>
+            <p class="form__element checkbox">
+              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="vitamins" name="vitamins"><label class="form__element-name checkbox__label" for="vitamins">Витамины</label></p>
           </div>
         </fieldset>
-        <!-- Кнопка отправить -->
         <div class="form__submit-wrapper">
           <button class="form__button button button--submit" type="submit">Отправить заявку</button>
           <p class="form__footnote">* — Обязательные поля</p>
         </div>
       </form>
     </div>
-
-
   </main>
   <footer class="page-footer">
     <section class="page-footer__contacts contacts">
       <h2 class="visually-hidden">Наш адрес</h2>
-
       <div class="contacts__address-wrapper">
         <div class="container">
           <div class="contacts__address-grid">
-            <p class="contacts__text">
-              Приглашаем<br />
-              к сотрудничеству<br />
-              дилеров!
-            </p>
-            <address class="contacts__shop-address">
-              ул. Большая<br />
-              Конюшенная, д. 19/8<br />
+            <p class="contacts__text">Приглашаем
+              <br>к сотрудничеству
+              <br>дилеров! </p>
+            <address class="contacts__shop-address">ул. Большая
+              <br>Конюшенная, д. 19/8
+              <br>
               <span class="contacts__city-name">Санкт-Петербург</span>
             </address>
           </div>
@@ -188,27 +140,18 @@
       <div class="contacts__map-wrapper">
         <noscript>
           <picture>
-            <source media="(min-width: 1440px)"
-              srcset="img/backgrounds/map-desktop.jpg 1x, img/backgrounds/map-desktop@2xjpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/backgrounds/map-tablet.jpg 1x, img/backgrounds/map-tablet@2x.jpg 2x ">
-            <img class="contacts__map-image" src="img/backgrounds/map-mobile.jpg"
-              srcset="img/backgrounds/map-mobile.jpg 1x, img/backgrounds/map-mobile@2x.jpg 2x" width="320" height="362"
-              alt="Адрес магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+            <source media="(min-width: 1440px)" srcset="img/backgrounds/map-desktop.jpg 1x, img/backgrounds/map-desktop@2xjpg 2x">
+            <source media="(min-width: 768px)" srcset="img/backgrounds/map-tablet.jpg 1x, img/backgrounds/map-tablet@2x.jpg 2x ">
+            <img class="contacts__map-image" src="img/backgrounds/map-mobile.jpg" srcset="img/backgrounds/map-mobile.jpg 1x, img/backgrounds/map-mobile@2x.jpg 2x" width="320" height="362" alt="Адрес магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
           </picture>
         </noscript>
-        <iframe class="contacts__map contacts__map--no-js"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.3208587163829!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1637871818454!5m2!1sru!2sby"
-          width="320" height="362" allowfullscreen=""
-          title="Наш магазин на карте по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
-          loading="lazy"></iframe>
+        <iframe class="contacts__map contacts__map--no-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.3208587163829!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1637871818454!5m2!1sru!2sby" width="320" height="362" allowfullscreen="" title="Наш магазин на карте по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" loading="lazy"></iframe>
       </div>
     </section>
     <div class="page-footer__links">
       <div class="container page-footer__grid">
         <a class="page-footer__logo-link" href="index.html">
-          <svg class="page-footer__logo-shop-name" width="128" height="24" viewBox="0 0 101 18" fill="none" role="img"
-            aria-label="Текстовый логотип магазина Cat ENERGY.">
+          <svg class="page-footer__logo-shop-name" width="128" height="24" viewbox="0 0 101 18" fill="none" role="img" aria-label="Текстовый логотип магазина Cat ENERGY.">
             <use xlink:href="img/sprite.svg#logo-shop-name"></use>
           </svg>
         </a>
@@ -216,7 +159,7 @@
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link" href="#" target="_blank">
-                <svg class="socials__icon socials__icon--vkontakte" width="23" height="19" viewBox="0 0 23 16">
+                <svg class="socials__icon socials__icon--vkontakte" width="23" height="19" viewbox="0 0 23 16">
                   <use xlink:href="img/sprite.svg#social-vk"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте.</span>
@@ -224,7 +167,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#" target="_blank">
-                <svg class="socials__icon socials__icon--instagram" width="16" height="16" viewBox="0 0 16 16">
+                <svg class="socials__icon socials__icon--instagram" width="16" height="16" viewbox="0 0 16 16">
                   <use xlink:href="img/sprite.svg#social-inst"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Инстаграмм.</span>
@@ -232,7 +175,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#" target="_blank">
-                <svg class="socials__icon socials__icon--facebook" width="22" height="22" viewBox="0 0 22 22">
+                <svg class="socials__icon socials__icon--facebook" width="22" height="22" viewbox="0 0 22 22">
                   <use xlink:href="img/sprite.svg#social-fb"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Фейсбук.</span>
@@ -242,7 +185,7 @@
         </div>
         <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="copyright__name">HTML Academy</span>
-          <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" role="img" aria-label="HTML ACADEMY">
+          <svg class="copyright__logo" width="27" height="34" viewbox="0 0 27 34" role="img" aria-label="HTML ACADEMY">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
@@ -250,5 +193,6 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+</body>
 
 </html>
