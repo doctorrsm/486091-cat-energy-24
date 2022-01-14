@@ -8,6 +8,7 @@
   @media (min-width: $screen-tablet) {
     justify-content: space-between;
     padding: 26px 0;
+    align-items: baseline;
   }
 
   @media (min-width: $screen-desktop) {
@@ -22,6 +23,10 @@
     align-items: center;
     align-self: flex-start;
     min-width: 174px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    min-width: 202px;
   }
 }
 
