@@ -51,13 +51,16 @@
         <p class="form__caption">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <div class="form__about-cat-input-wrapper">
           <fieldset class="form__group input-group">
-            <legend class="form__group-name visually-hidden">Заполните данные вашего кота.</legend><label class="form__element">
+            <legend class="form__group-name visually-hidden">Заполните данные вашего кота.</legend>
+            <label class="form__element">
               <span class="form__element-name">Имя:*</span>
               <input class="form__input" type="text" name="pet-name" value="Барсик" required>
-            </label><label class="form__element">
+            </label>
+            <label class="form__element">
               <span class="form__element-name">Вес (кг):*</span>
               <input class="form__input form__input--number" type="number" name="pet-weight" value="7" required>
-            </label><label class="form__element">
+            </label>
+            <label class="form__element">
               <span class="form__element-name">Возраст&#160;(лет):</span>
               <input class="form__input form__input--number" type="number" name="pet-age" value="7">
             </label>
@@ -65,30 +68,39 @@
           <fieldset class="form__group form__group-radio-wrapper">
             <legend class="form__group-name visually-hidden">Выберите цель программы.</legend>
             <p class="form__element radio">
-              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-loss" name="program-goal" value="weight loss" required checked><label class="form__element-name radio__label" for="program-goal-loss">Похудение</label></p>
+              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-loss" name="program-goal" value="weight loss" required checked>
+              <label class="form__element-name radio__label" for="program-goal-loss">Похудение</label>
+            </p>
             <p class="form__element radio">
-              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-gain" name="program-goal" value="weight gain" required><label class="form__element-name radio__label" for="program-goal-gain">Набор массы</label></p>
+              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-gain" name="program-goal" value="weight gain" required>
+              <label class="form__element-name radio__label" for="program-goal-gain">Набор массы</label>
+            </p>
             <p class="form__element radio">
-              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-undefenite" name="program-goal" value="need advice" required><label class="form__element-name radio__label" for="program-goal-undefenite">Не знаю (Нужен ваш совет)</label></p>
+              <input class="form__radio radio__input visually-hidden" type="radio" id="program-goal-undefenite" name="program-goal" value="need advice" required>
+              <label class="form__element-name radio__label" for="program-goal-undefenite">Не знаю (Нужен ваш совет)</label>
+            </p>
           </fieldset>
         </div>
         <fieldset class="form__group">
           <legend class="form__group-name">
             <span class="form__group-name-text">Контактные данные (владельца кота)</span>
           </legend>
-          <div class="input-group input-group--contacts"><label class="form__element">
+          <div class="input-group input-group--contacts">
+            <label class="form__element">
               <span class="form__element-name">E-mail:*</span>
               <input class="form__input input form__input--mail" type="email" name="customer-name" value="kuklachev@gmail.com" required>
               <svg class="form__input-icon" fill="none" width="20" height="15" viewbox="0 0 20 15">
                 <use xlink:href="img/sprite.svg#icon-email"></use>
               </svg>
-            </label><label class="form__element">
+            </label>
+            <label class="form__element">
               <span class="form__element-name">Телефон:*</span>
               <input class="form__input form__input--phone" type="tel" name="customer-phone" value="8 (960) 900-60-90" required>
               <svg class="form__input-icon form__input-icon--phone" fill="none" width="20" height="21" viewbox="0 0 20 21">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
-            </label></div>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__group-name">
@@ -104,13 +116,21 @@
           </legend>
           <div class="form__group-checkbox-wrapper">
             <p class="form__element checkbox">
-              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked><label class="form__element-name checkbox__label" for="sweetener">Cахарозаменитель</label></p>
+              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
+              <label class="form__element-name checkbox__label" for="sweetener">Cахарозаменитель</label>
+            </p>
             <p class="form__element checkbox">
-              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="drinking-water" name="drinking-water"><label class="form__element-name checkbox__label" for="drinking-water">Питьевая вода</label></p>
+              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="drinking-water" name="drinking-water">
+              <label class="form__element-name checkbox__label" for="drinking-water">Питьевая вода</label>
+            </p>
             <p class="form__element checkbox">
-              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="milk" name="milk"><label class="form__element-name checkbox__label" for="milk">Молоко</label></p>
+              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="milk" name="milk">
+              <label class="form__element-name checkbox__label" for="milk">Молоко</label>
+            </p>
             <p class="form__element checkbox">
-              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="vitamins" name="vitamins"><label class="form__element-name checkbox__label" for="vitamins">Витамины</label></p>
+              <input class="form__checkbox checkbox__input visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+              <label class="form__element-name checkbox__label" for="vitamins">Витамины</label>
+            </p>
           </div>
         </fieldset>
         <div class="form__submit-wrapper">
